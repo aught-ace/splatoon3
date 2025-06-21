@@ -245,12 +245,12 @@ const card = [
     {
         category: 'メイン',
         title: 'パブロ',
-        body: '<mark>振るのがとても速い</mark>フデ。攻撃力は低い。',
+        body: '<mark>振るのも塗り進むのもとても速い</mark>フデ。<mark>連続で振ることができる</mark>が攻撃力は低い。',
     },
     {
         category: 'メイン',
         title: 'わかばシューター',
-        body: '<mark>インク効率がよく塗り性能が高い</mark>シューター。弾ブレが大きい。',
+        body: '<mark>インク効率がとても高く塗り性能が高い</mark>シューター。弾ブレが大きい。',
     },
     {
         category: 'メイン',
@@ -260,7 +260,7 @@ const card = [
     {
         category: 'メイン',
         title: 'スクイックリンα',
-        body: '<mark>射程を短くしてチャージ時間を短くした動きやすい</mark>チャージャー。',
+        body: '<mark>チャージ時間が短い動きやすい</mark>チャージャー。射程は短い。',
     },
     {
         category: 'メイン',
