@@ -29,9 +29,27 @@
     padding: 0.25rem;
 }
 
-h1 {
+header {
     color: #99C;
+    inline-size: 100%;
+    margin-block-end: 0.25rem;
+    margin-inline: auto;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr;
+    display: grid;
+}
+
+h1 {
     inline-size: fit-content;
+    display: block;
+}
+
+#version {
+    background-color: #99C;
+    color: #336;
+    font-size: 0.8rem;
+    border-radius: 0.25rem;
+    padding: 0.1rem;
     display: block;
 }
 
@@ -49,15 +67,6 @@ h1 {
     display: block;
 }
 
-header {
-    color: #FFF;
-    inline-size: 100%;
-    margin-block-end: 0.25rem;
-    margin-inline: auto;
-    justify-content: space-between;
-    display: flex;
-}
-
 main {
     background-color: #FFF;
     color: #336;
@@ -69,16 +78,48 @@ main {
     border-radius: 0.5rem;
 }
 
-h2 {
+#card-header {
     background-color: #336;
-    color: #FFF;
     padding: 0.25rem;
     border-radius: 0.25rem;
     margin-block-start: 0.25rem;
     margin-block-end: 0.125rem;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr;
+    display: grid;
 }
 
-p {
+#card-title {
+    color: #FFF;
+}
+
+#card-category {
+    background-color: #FFF;
+    color: #336;
+    font-size: 0.8rem;
+    padding: 0.1rem;
+    border-radius: 0.125rem;
+    display: block;
+}
+
+#card-category.main {
+    background-color: #F99;
+    color: #633;
+}
+#card-category.sub {
+    background-color: #9F9;
+    color: #363;
+}
+#card-category.special {
+    background-color: #99F;
+    color: #336;
+}
+#card-category.weapon-set {
+    background-color: #FFF;
+    color: #666;
+}
+
+#card-body {
     color: #669;
     line-height: 1.5em;
 }
