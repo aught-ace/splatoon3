@@ -1,11 +1,11 @@
 'use strict';
 
-const version = '0.0.3';
+const thisVersion = '0.0.3';
 
 // 知識集
 const card = [
     {
-        category: version,
+        category: thisVersion,
         title: 'スプラトゥーン3 知識カード',
         body: '基本的な知識を<mark>ランダムに表示していきます</mark>。「すすむ」ボタンを押すと<mark>次のカードを表示します</mark>。カテゴリーのボタンを押して<mark>表示するカテゴリーを絞る</mark>こともできます。Ver. 10対応です。',
     },
@@ -1545,7 +1545,7 @@ const backCard = (event) => {
         if(index < 0) index = card.length - 1;
         c = card[index].category;
     } while (
-        c !== version && (
+        c !== thisVersion && (
             c === 'メイン' && !mainCheck.checked ||
             c === 'サブ' && !subCheck.checked ||
             c === 'スペシャル' && !specialCheck.checked ||
@@ -1565,7 +1565,7 @@ const nextCard = (event) => {
         if(card.length <= index) index = 0;
         c = card[index].category;
     } while (
-        c !== version && (
+        c !== thisVersion && (
             c === 'メイン' && !mainCheck.checked ||
             c === 'サブ' && !subCheck.checked ||
             c === 'スペシャル' && !specialCheck.checked ||
