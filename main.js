@@ -1,6 +1,6 @@
 'use strict';
 
-const thisVersion = '0.0.3';
+const thisVersion = '0.0.4';
 
 // 知識集
 const card = [
@@ -1496,6 +1496,7 @@ const card = [
     },
 ];
 
+// カテゴリーの対応
 const categoryClassName = {
     'メイン': 'main',
     'サブ': 'sub',
@@ -1504,13 +1505,16 @@ const categoryClassName = {
     'ブキセット': 'weapon-set',
 };
 
-// 現在のインデクス
-let index = 0;
+let index = 0; // 現在のインデクス
 
 // 要素
 const backButton = document.querySelector('#back'); // もどるボタン
-const numberDiv = document.querySelector('#number'); // ナンバー
+const reverseButton = document.querySelector('#reverse'); // すべてうらがえすボタン
+const showButton = document.querySelector('#show'); // めくるボタン
+const showCheck = document.querySelector('#show input[type="checkbox"]'); // みるチェックボックス
+const reverseCheck = document.querySelector('#reverse input[type="checkbox"]'); // うらがえしのチェックボックス
 const nextButton = document.querySelector('#next'); // すすむボタン
+const cardWrap = document.querySelector('#card'); // カード全体
 const cardCategory = document.querySelector('#card-category'); // カテゴリー
 const cardTitle = document.querySelector('#card-title'); // タイトル
 const cardBody = document.querySelector('#card-body'); // 本文
@@ -1532,13 +1536,14 @@ const viewCard = () => {
     cardCategory.innerHTML = card[index].category;
     cardBody.innerHTML = card[index].body;
     cardCategory.className = categoryClassName[card[index].category];
-    numberDiv.textContent = index;
 }
 viewCard();
 
 // 前のカードを表示
 const backCard = (event) => {
     let c = null;
+
+    showCheck.checked = false;
 
     do {
         index--;
@@ -1559,6 +1564,8 @@ const backCard = (event) => {
 // 次のカードを表示
 const nextCard = (event) => {
     let c = null;
+
+    showCheck.checked = false;
 
     do {
         index++;

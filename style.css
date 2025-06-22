@@ -51,6 +51,15 @@ main {
     display: grid;
 }
 
+:has(#reverse input:checked):has(#show input:not(:checked)) #card,
+:has(#reverse input:not(:checked)):has(#show input:checked) #card {
+    background-color: #669;
+}
+:has(#reverse input:checked):has(#show input:not(:checked)) #card-body,
+:has(#reverse input:not(:checked)):has(#show input:checked) #card-body {
+    visibility: hidden;
+}
+
 #card-title {
     color: #FFF;
     block-size: 1rem;
@@ -159,40 +168,56 @@ input[type="checkbox"] {
 
 #change-button {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 2fr;
+    block-size: 3rem;
     border-radius: 0.25rem;
     gap: 0.25rem;
     display: grid;
 }
 
-#number {
-    color: #669;
-    padding-block: 1rem;
-    border-style: none;
-    border-radius: 0.25rem;
-    inline-size: 100%;
-    text-align: center;
-}
-
+/* 下のボタン類 */
 #back {
-    background-color: #99C;
+    background-color: #CCF;
     color: #336;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
 }
 #back:active {
-    background-color: #669;
-    color: #336;
+    background-color: #99C;
+    color: #003;
 }
 #next {
-    background-color: #FF3;
-    color: #663;
+    background-color: #CCF;
+    color: #336;
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
 }
 #next:active {
-    background-color: #CC0;
-    color: #663;
+    background-color: #99C;
+    color: #003;
+}
+#reverse {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+#show {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+#change-button label {
+    background-color: #669;
+    color: #336;
+    font-size: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#change-button label:has(:checked) {
+    background-color: #99C;
+    color: #003;
 }
 
-#back, #next {
-    padding-block: 1rem;
+#back, #reverse, #show, #next {
     border-style: none;
     border-radius: 0.25rem;
     inline-size: 100%;
@@ -200,10 +225,6 @@ input[type="checkbox"] {
     -webkit-user-select: none; /* Safari */
     user-select: none;
     cursor: pointer;
-}
-
-ul {
-    list-style: none;
 }
 
 :root, body {
