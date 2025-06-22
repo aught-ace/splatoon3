@@ -123,6 +123,11 @@ label:has(#gear-power:checked) {
     line-height: 1.5em;
 }
 
+#card-body div {
+    color: #669;
+    line-height: 1.5em;
+}
+
 mark {
     background-color: #FF3;
     color: #663;
