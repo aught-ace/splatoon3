@@ -4,22 +4,39 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta name="description" content="スプラトゥーン3の基本的な知識をランダムに表示するカードです。">
-        <title>Splatoon 3 知識カード</title>
+        <title>スプラトゥーン3 知識カード</title>
 	    <link href="./icon/icon.svg" rel="icon">
         <link href="./icon/apple-touch-icon.png" rel="apple-touch-icon">
         <link href="./style.css" rel="stylesheet">
     </head>
     <body>
-        <div id="box">
-            <header><h1>Splatoon 3 知識カード</h1><span id="version">0.0.1</span></header>
-            <main>
-                <div id="card-header"><h2 id="card-title"></h2><span id="card-category" class=""></span></div>
-                <p id="card-body"></p>
-            </main>
-            <footer>
-                <button id="next">NEXT</button>
-            </footer>
-        </div>
+        <main>
+            <div id="card">
+                <div id="card-header">
+                    <div id="card-title">スプラトゥーン3 知識カード</div>
+                    <span id="card-category" class="empty">0.0.3</span>
+                </div>
+                <div id="card-body">
+                    基本的な知識を<mark>ランダムに表示していきます</mark>。
+                    「すすむ」ボタンを押すと<mark>次のカードを表示します</mark>。
+                    カテゴリーのボタンを押して<mark>表示するカテゴリーを絞る</mark>こともできます。
+                    Ver. 10対応です。
+                </div>
+            </div>
+            <div id="control">
+                <div id="category-button">
+                    <label><input id="main" type="checkbox" checked>メイン</label>
+                    <label><input id="sub" type="checkbox" checked>サブ</label>
+                    <label><input id="special" type="checkbox" checked>スペシャル</label>
+                    <label><input id="weapon-set" type="checkbox" checked>ブキセット</label>
+                    <label><input id="gear-power" type="checkbox" checked>ギアパワー</label>
+                </div>
+                <div id="change-button">
+                    <button id="back">もどる</button>
+                    <button id="next">すすむ</button>
+                </div>
+            </div>
+        </main>
         <script src="./main.js" defer></script>
     </body>
 </html>

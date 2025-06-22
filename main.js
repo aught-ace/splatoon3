@@ -5,7 +5,7 @@ const card = [
     {
         category: 'サブ',
         title: 'スプラッシュボム',
-        body: '着地して<mark>しばらくすると爆発する</mark>ボム。',
+        body: '地面に接地して<mark>しばらくすると爆発する</mark>ボム。',
     },
     {
         category: 'サブ',
@@ -25,17 +25,17 @@ const card = [
     {
         category: 'サブ',
         title: 'クイックボム',
-        body: '何かにぶつかると、<mark>すぐに爆発する</mark>ボム。<mark>インク消費量は少ないが爆発も小さく攻撃力も低い</mark>。',
+        body: '何かにぶつかると、<mark>すぐに爆発する</mark>ボム。<mark>インク消費量は少ない</mark>が爆発も小さく攻撃力も低い。',
     },
     {
         category: 'サブ',
         title: 'スプリンクラー',
-        body: '地面や壁にくっつき、<mark>インクをまき散らす</mark>仕掛け。しばらく設置したままにすると<mark>勢いが弱まる</mark>。同時に1つまで出せる。',
+        body: '地面や壁にくっつき、<mark>インクをまき散らす</mark>仕掛け。しばらく設置したままにすると勢いが弱まる。同時に1つまで出せる。',
     },
     {
         category: 'サブ',
         title: 'スプラッシュシールド',
-        body: '<mark>敵の侵入や攻撃を防ぐ</mark>インクの壁。攻撃されると<mark>壊れるまでの時間が早くなる</mark>。同時に1つまで出せる。',
+        body: '<mark>敵の侵入や攻撃を防ぐ</mark>インクの壁。攻撃されると壊れるまでの時間が早くなる。同時に1つまで出せる。',
     },
     {
         category: 'サブ',
@@ -55,13 +55,14 @@ const card = [
     {
         category: 'サブ',
         title: 'トラップ',
-        body: '足元に設置し、<mark>敵が近づくと作動する</mark>罠。敵を<mark>マーキングし、ダメージを与える</mark>。敵のインクで<mark>塗られても作動する</mark>。同時に2つまで出せる。',
+        body: '足元に設置し、<mark>敵が近づくと作動する</mark>罠。敵を<mark>マーキングし、ダメージを与える</mark>。敵のインクで塗られても作動する。同時に2つまで出せる。',
     },
     {
         category: 'サブ',
         title: 'ポイズンミスト',
         body: '着弾すると毒の霧が発生し、入った敵の<mark>移動を遅くしてインクを減らし続ける</mark>容器。霧の中に<mark>居続けるほど効果が大きくなる</mark>。',
     },
+
     {
         category: 'サブ',
         title: 'ラインマーカー',
@@ -72,6 +73,7 @@ const card = [
         title: 'トーピード',
         body: '敵の近くに投げると変形して<mark>相手に向かって飛んでいく</mark>武器。着弾すると<mark>爆発するインクをまき散らす</mark>。攻撃されると撃ち落される。',
     },
+
     {
         category: 'スペシャル',
         title: 'ウルトラショット',
@@ -80,7 +82,7 @@ const card = [
     {
         category: 'スペシャル',
         title: 'グレートバリア',
-        body: '足元に設置する球状のバリア。敵の<mark>外からのインク攻撃を防ぐ</mark>が、<mark>敵自体の侵入は防げない</mark>。内部中心の装置や頂上の部品を攻撃されると早く壊れる。',
+        body: '足元に設置する球状のバリア。敵の<mark>外からのインク攻撃を防ぐ</mark>が、敵自体の侵入は防げない。内部中心の装置や頂上の部品を攻撃されると早く壊れる。',
     },
     {
         category: 'スペシャル',
@@ -125,7 +127,7 @@ const card = [
     {
         category: 'スペシャル',
         title: 'ウルトラハンコ',
-        body: '<mark>前方を叩きつけながら前進できる</mark>巨大なハンコ。ハンコを<mark>遠くに投げつけて攻撃することもできるが、スペシャルの時間が終了する</mark>。',
+        body: '<mark>前方を叩きつけながら前進できる</mark>巨大なハンコ。ハンコを<mark>遠くに投げつけて攻撃することもできる</mark>が、スペシャルの時間が終了する。',
     },
     {
         category: 'スペシャル',
@@ -165,8 +167,9 @@ const card = [
     {
         category: 'スペシャル',
         title: 'スミナガシート',
-        body: '投げて着弾すると、<mark>少しずつ前進する大きなシートを発生させる</mark>装置。触れた敵は<mark>一定時間色が見えづらくなり</mark>、ダメージも少し受ける。',
+        body: '投げて着弾すると、<mark>少しずつ前進する大きなシートを発生させる</mark>装置。触れた敵は<mark>一定時間画面の色が見えづらくなり</mark>、ダメージも少し受ける。',
     },
+
     {
         category: 'メイン',
         title: 'スプラシューター',
@@ -265,7 +268,7 @@ const card = [
     {
         category: 'メイン',
         title: 'デュアルスイーパー',
-        body: '<mark>射程が長い</mark>マニューバー。スライド後に立ち止まって撃ち続けると<mark>射程が少し伸びる</mark>。スライドは2回連続で可能。',
+        body: '<mark>射程が長い</mark>マニューバー。スライド後は<mark>射程が少し伸びる</mark>が、攻撃性能は変わらない。また、スライド後の<mark>硬直中も少し動くことができる</mark>。スライドは2回連続で可能。',
     },
     {
         category: 'メイン',
@@ -320,7 +323,7 @@ const card = [
     {
         category: 'メイン',
         title: 'L3リールガン',
-        body: '<mark>1トリガーで3つの弾を発射する</mark>シューター。押しっぱなしでは連射できない。<mark>射程もやや長く塗り性能も高め</mark>。敵に4発命中しないと倒すことができない。',
+        body: '<mark>1トリガーで3つの弾を発射する</mark>シューター。押しっぱなしでは連射できない<mark>。射程もやや長く塗り性能も高め</mark>。敵に4発命中しないと倒すことができない。',
     },
     {
         category: 'メイン',
@@ -435,7 +438,7 @@ const card = [
     {
         category: 'メイン',
         title: 'ケルビン525',
-        body: '<mark>スライド後の攻撃力が上がる</mark>マニューバー。<mark>2回連続でスライドできる。</mark>。連射は遅い。',
+        body: '<mark>スライド後の攻撃力が上がる</mark>マニューバー。<mark>スライド直後の弾は命中すると2発で敵を倒せる</mark>。<mark>2回連続でスライドできる</mark>。連射は遅い。',
     },
     {
         category: 'メイン',
@@ -492,10 +495,432 @@ const card = [
         title: 'クーゲルシュライバー',
         body: '<mark>撃ち始めは連射が速いが撃ち続けると変化して射程が長く弾ブレが小さくなる</mark>スピナー。発射中に<mark>再チャージができる</mark>。逆に撃ち始めは射程は短く弾ブレが大きく、変化後は連射が遅め。',
     },
+
+    {
+        category: 'ギアパワー',
+        title: 'インク効率アップ (メイン)',
+        body: '<mark>メインの消費インク量が少なくなる</mark>。付きやすいブランドはジモンとタタキケンサキ。',
+    },
+    {
+        category: 'ギアパワー',
+        title: 'インク効率アップ (サブ)',
+        body: '<mark>サブの消費インク量が少なくなる</mark>。付きやすいブランドはホッコリーとアナアキ。',
+    },
+    {
+        category: 'ギアパワー',
+        title: 'インク回復力アップ',
+        body: '<mark>インクの回復速度が上がる</mark>。付きやすいブランドはアロメ。',
+    },
+    {
+        category: 'ギアパワー',
+        title: 'ヒト移動速度アップ',
+        body: '<mark>ヒト状態の移動速度が上がる</mark>。付きやすいブランドはロッケンベルグ。',
+    },
+    {
+        category: 'ギアパワー',
+        title: 'イカダッシュ速度アップ',
+        body: '<mark>イカダッシュ時の移動速度が上がる</mark>。付きやすいブランドはクラーゲス。',
+    },
+    {
+        category: 'ギアパワー',
+        title: 'スペシャル増加量アップ',
+        body: '<mark>スペシャルゲージの増加量が上がる</mark>。付きやすいブランドはヤコ。',
+    },
+    {
+        category: 'ギアパワー',
+        title: 'スペシャル減少量ダウン',
+        body: '自分がやられた時の<mark>スペシャルゲージの減少量が少なくなる</mark>。付きやすいブランドはエゾッコとエゾッコリー。',
+    },
+    {
+        category: 'ギアパワー',
+        title: 'スペシャル性能アップ',
+        body: '<mark>スペシャルの性能が上がる</mark>。付きやすいブランドはフォーリマ。',
+    },
+    {
+        category: 'ギアパワー',
+        title: '復活時間短縮',
+        body: '<mark>敵を一人も倒せないまま連続でやられた時の復活時間が短くなる</mark>。付きやすいブランドはホタックス。',
+    },
+    {
+        category: 'ギアパワー',
+        title: 'スーパージャンプ時間短縮',
+        body: '<mark>スーパージャンプにかかる時間が短くなる</mark>。付きやすいブランドはアイロニック。',
+    },
+    {
+        category: 'ギアパワー',
+        title: 'サブ性能アップ',
+        body: '<mark>サブの性能が上がる</mark>。付きやすいブランドはエンペリー。',
+    },
+    {
+        category: 'ギアパワー',
+        title: '相手インク影響軽減',
+        body: '<mark>相手のインクを踏んだときのダメージや移動速度の減少量が少なくなる</mark>。付きやすいブランドはバトロイカ。',
+    },
+    {
+        category: 'ギアパワー',
+        title: 'サブ影響軽減',
+        body: '<mark>敵のサブによるダメージや効果を軽減する</mark>。付きやすいブランドはシグレニ。',
+    },
+    {
+        category: 'ギアパワー',
+        title: 'アクション強化',
+        body: '<mark>イカロールを行える角度が広くなり、イカノボリの貯めが早くなり、ジャンプ直後に攻撃するときの弾のブレが小さくなる</mark>。付きやすいブランドはバラズシとシチリン。',
+    },
+    {
+        category: 'ギアパワー',
+        title: 'スタートダッシュ',
+        body: '<mark>対戦開始から30カウントの間、移動に関する効果がかなり上がる</mark>。アタマの基本ギアパワーにしか付けられない。',
+    },
+    {
+        category: 'ギアパワー',
+        title: 'ラストスパート',
+        body: '<mark>対戦終了の30カウント前からインク効率とインク回復速度がかなり上がる</mark>。アタマの基本ギアパワーにしか付けられない。',
+    },
+    {
+        category: 'ギアパワー',
+        title: '逆境強化',
+        body: '自分のチームの人数が敵のチームより少ない場合、<mark>少しずつスペシャルゲージが増える</mark>。アタマの基本ギアパワーにしか付けられない。',
+    },
+    {
+        category: 'ギアパワー',
+        title: 'カムバック',
+        body: 'やられて復活した後、<mark>しばらくの間一部の能力がかなり上がる</mark>。アタマの基本ギアパワーにしか付けられない。',
+    },
+    {
+        category: 'ギアパワー',
+        title: 'イカニンジャ',
+        body: '地面をイカダッシュした時に<mark>インクが飛び散らなくなる</mark>。移動速度は少し遅くなる。フクの基本ギアパワーにしか付けられない。',
+    },
+    {
+        category: 'ギアパワー',
+        title: 'リベンジ',
+        body: '復活したとき、<mark>自分を倒した敵の位置が遠くから見えるようになる</mark>。フクの基本ギアパワーにしか付けられない。',
+    },
+    {
+        category: 'ギアパワー',
+        title: 'サーマルインク',
+        body: 'メインを直接当てた相手が、<mark>しばらく遠くから見えるようになる</mark>。フクの基本ギアパワーにしか付けられない。',
+    },
+    {
+        category: 'ギアパワー',
+        title: '復活ペナルティアップ',
+        body: '<mark>自分と倒した敵のスペシャル減少量と復活時間が増える</mark>。フクの基本ギアパワーにしか付けられない。',
+    },
+    {
+        category: 'ギアパワー',
+        title: '追加ギアパワー倍化',
+        body: 'このギアについている<mark>追加ギアパワーを1個で2個分の効果にする</mark>。フクのフェスTの基本ギアパワーとして初めから付いており、別のギアパワーで上書きしてしまうと元には戻せない。',
+    },
+    {
+        category: 'ギアパワー',
+        title: 'ステルスジャンプ',
+        body: '<mark>スーパージャンプの着地点のマーカーが離れた場所からは見えなくなる</mark>。クツの基本ギアパワーにしか付けられない。',
+    },
+    {
+        category: 'ギアパワー',
+        title: '対物攻撃力アップ',
+        body: '<mark>プレイヤー以外の物体に対して攻撃した時のダメージが増える</mark>。ただしシェルターの傘は含まない。クツの基本ギアパワーにしか付けられない。',
+    },
+    {
+        category: 'ギアパワー',
+        title: '受け身術',
+        body: 'スーパージャンプ着地時に<mark>前転できる</mark>。クツの基本ギアパワーにしか付けられない。',
+    },
+
     {
         category: 'ブキセット',
         title: 'スプラシューター',
         body: 'サブは<mark>キューバンボム</mark>、スペシャルは<mark>ウルトラショット</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ヒーローシューター レプリカ',
+        body: 'サブは<mark>キューバンボム</mark>、スペシャルは<mark>ウルトラショット</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'オーダーシューター レプリカ',
+        body: 'サブは<mark>キューバンボム</mark>、スペシャルは<mark>ウルトラショット</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'スプラシューターコラボ',
+        body: 'サブは<mark>スプラッシュボム</mark>、スペシャルは<mark>トリプルトルネード</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'オクタシューター レプリカ',
+        body: 'サブは<mark>スプラッシュボム</mark>、スペシャルは<mark>トリプルトルネード</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'スプラシューター煌',
+        body: 'サブは<mark>クイックボム</mark>、スペシャルは<mark>テイオウイカ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: '.96ガロン',
+        body: 'サブは<mark>スプリンクラー</mark>、スペシャルは<mark>キューインキ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: '.96ガロンデコ',
+        body: 'サブは<mark>スプラッシュシールド</mark>、スペシャルは<mark>テイオウイカ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: '.96ガロン爪',
+        body: 'サブは<mark>ラインマーカー</mark>、スペシャルは<mark>エナジースタンド</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'シャープマーカー',
+        body: 'サブは<mark>クイックボム</mark>、スペシャルは<mark>カニタンク</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'シャープマーカーネオ',
+        body: 'サブは<mark>キューバンボム</mark>、スペシャルは<mark>トリプルトルネード</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'シャープマーカーGECK',
+        body: 'サブは<mark>ポイズンミスト</mark>、スペシャルは<mark>アメフラシ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'わかばシューター',
+        body: 'サブは<mark>スプラッシュボム</mark>、スペシャルは<mark>グレートバリア</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'もみじシューター',
+        body: 'サブは<mark>トーピード</mark>、スペシャルは<mark>ホップソナー</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: '.52ガロン',
+        body: 'サブは<mark>スプラッシュシールド</mark>、スペシャルは<mark>メガホンレーザー5.1ch</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: '.52ガロンデコ',
+        body: 'サブは<mark>カーリングボム</mark>、スペシャルは<mark>スミナガシート</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'H3リールガン',
+        body: 'サブは<mark>ポイントセンサー</mark>、スペシャルは<mark>エナジースタンド</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'H3リールガンD',
+        body: 'サブは<mark>スプラッシュシールド</mark>、スペシャルは<mark>グレートバリア</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'H3リールガンSNAK',
+        body: 'サブは<mark>キューバンボム</mark>、スペシャルは<mark>トリプルトルネード</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'L3リールガン',
+        body: 'サブは<mark>カーリングボム</mark>、スペシャルは<mark>カニタンク</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'L3リールガンD',
+        body: 'サブは<mark>クイックボム</mark>、スペシャルは<mark>ウルトラハンコ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'L3リールガン箔',
+        body: 'サブは<mark>スプラッシュボム</mark>、スペシャルは<mark>ジェットパック</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'N-ZAP85',
+        body: 'サブは<mark>キューバンボム</mark>、スペシャルは<mark>エナジースタンド</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'N-ZAP89',
+        body: 'サブは<mark>ロボットボム</mark>、スペシャルは<mark>デコイチラシ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ジェットスイーパー',
+        body: 'サブは<mark>ラインマーカー</mark>、スペシャルは<mark>キューインキ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ジェットスイーパーカスタム',
+        body: 'サブは<mark>ポイズンミスト</mark>、スペシャルは<mark>アメフラシ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ジェットスイーパーCOBR',
+        body: 'サブは<mark>クイックボム</mark>、スペシャルは<mark>ウルトラチャクチ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'プライムシューター',
+        body: 'サブは<mark>ラインマーカー</mark>、スペシャルは<mark>カニタンク</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'プライムシューターコラボ',
+        body: 'サブは<mark>キューバンボム</mark>、スペシャルは<mark>ナイスダマ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'プライムシューターFRZN',
+        body: 'サブは<mark>スプラッシュボム</mark>、スペシャルは<mark>マルチミサイル</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'プロモデラーMG',
+        body: 'サブは<mark>タンサンボム</mark>、スペシャルは<mark>サメライド</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'プロモデラーRG',
+        body: 'サブは<mark>スプリンクラー</mark>、スペシャルは<mark>ナイスダマ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'プロモデラー彩',
+        body: 'サブは<mark>クイックボム</mark>、スペシャルは<mark>スミナガシート</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ボールドマーカー',
+        body: 'サブは<mark>カーリングボム</mark>、スペシャルは<mark>ウルトラハンコ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ボールドマーカーネオ',
+        body: 'サブは<mark>ジャンプビーコン</mark>、スペシャルは<mark>メガホンレーザー5.1ch</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ボトルガイザー',
+        body: 'サブは<mark>スプラッシュシールド</mark>、スペシャルは<mark>ウルトラショット</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ボトルガイザーフォイル',
+        body: 'サブは<mark>ロボットボム</mark>、スペシャルは<mark>スミナガシート</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'スペースシューター',
+        body: 'サブは<mark>ポイントセンサー</mark>、スペシャルは<mark>メガホンレーザー5.1ch</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'スペースシューターコラボ',
+        body: 'サブは<mark>トラップ</mark>、スペシャルは<mark>ジェットパック</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ロングブラスター',
+        body: 'サブは<mark>キューバンボム</mark>、スペシャルは<mark>ホップソナー</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ロングブラスターカスタム',
+        body: 'サブは<mark>スプラッシュボム</mark>、スペシャルは<mark>テイオウイカ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ホットブラスター',
+        body: 'サブは<mark>ロボットボム</mark>、スペシャルは<mark>グレートバリア</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ホットブラスターカスタム',
+        body: 'サブは<mark>ポイントセンサー</mark>、スペシャルは<mark>ウルトラチャクチ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ホットブラスター艶',
+        body: 'サブは<mark>ジャンプビーコン</mark>、スペシャルは<mark>カニタンク</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'クラッシュブラスター',
+        body: 'サブは<mark>スプラッシュボム</mark>、スペシャルは<mark>ウルトラショット</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'クラッシュブラスターネオ',
+        body: 'サブは<mark>カーリングボム</mark>、スペシャルは<mark>デコイチラシ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'Rブラスターエリート',
+        body: 'サブは<mark>ポイズンミスト</mark>、スペシャルは<mark>キューインキ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'Rブラスターエリートデコ',
+        body: 'サブは<mark>ラインマーカー</mark>、スペシャルは<mark>メガホンレーザー5.1ch</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'RブラスターエリートWNTR',
+        body: 'サブは<mark>キューバンボム</mark>、スペシャルは<mark>エナジースタンド</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ノヴァブラスター',
+        body: 'サブは<mark>スプラッシュボム</mark>、スペシャルは<mark>ショクワンダー</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ノヴァブラスターネオ',
+        body: 'サブは<mark>タンサンボム</mark>、スペシャルは<mark>ウルトラハンコ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'オーダーブラスター レプリカ',
+        body: 'サブは<mark>スプラッシュボム</mark>、スペシャルは<mark>ショクワンダー</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ラピッドブラスター',
+        body: 'サブは<mark>トラップ</mark>、スペシャルは<mark>トリプルトルネード</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ラピッドブラスターデコ',
+        body: 'サブは<mark>トーピード</mark>、スペシャルは<mark>ジェットパック</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'S-BLAST92',
+        body: 'サブは<mark>スプリンクラー</mark>、スペシャルは<mark>サメライド</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'S-BLAST91',
+        body: 'サブは<mark>クイックボム</mark>、スペシャルは<mark>ナイスダマ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ダイナモローラー',
+        body: 'サブは<mark>スプリンクラー</mark>、スペシャルは<mark>エナジースタンド</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ダイナモローラーテスラ',
+        body: 'サブは<mark>スプラッシュボム</mark>、スペシャルは<mark>デコイチラシ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ダイナモローラー冥',
+        body: 'サブは<mark>ポイントセンサー</mark>、スペシャルは<mark>メガホンレーザー5.1ch</mark>。',
     },
     {
         category: 'ブキセット',
@@ -504,8 +929,563 @@ const card = [
     },
     {
         category: 'ブキセット',
+        title: 'スプラローラーコラボ',
+        body: 'サブは<mark>ジャンプビーコン</mark>、スペシャルは<mark>テイオウイカ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'オーダーローラー レプリカ',
+        body: 'サブは<mark>カーリングボム</mark>、スペシャルは<mark>グレートバリア</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ヴァリアブルローラー',
+        body: 'サブは<mark>トラップ</mark>、スペシャルは<mark>マルチミサイル</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ヴァリアブルローラーフォイル',
+        body: 'サブは<mark>キューバンボム</mark>、スペシャルは<mark>スミナガシート</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'カーボンローラー',
+        body: 'サブは<mark>ロボットボム</mark>、スペシャルは<mark>ショクワンダー</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'カーボンローラーデコ',
+        body: 'サブは<mark>クイックボム</mark>、スペシャルは<mark>ウルトラショット</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'カーボンローラーANGL',
+        body: 'サブは<mark>タンサンボム</mark>、スペシャルは<mark>デコイチラシ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ワイドローラー',
+        body: 'サブは<mark>スプラッシュシールド</mark>、スペシャルは<mark>キューインキ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ワイドローラーコラボ',
+        body: 'サブは<mark>ラインマーカー</mark>、スペシャルは<mark>アメフラシ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ワイドローラー惑',
+        body: 'サブは<mark>トーピード</mark>、スペシャルは<mark>ウルトラチャクチ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'パブロ',
+        body: 'サブは<mark>スプラッシュボム</mark>、スペシャルは<mark>メガホンレーザー5.1ch</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'パブロ・ヒュー',
+        body: 'サブは<mark>トラップ</mark>、スペシャルは<mark>ウルトラハンコ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ホクサイ',
+        body: 'サブは<mark>キューバンボム</mark>、スペシャルは<mark>ショクワンダー</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ホクサイ・ヒュー',
+        body: 'サブは<mark>ジャンプビーコン</mark>、スペシャルは<mark>アメフラシ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'オーダーブラシ レプリカ',
+        body: 'サブは<mark>キューバンボム</mark>、スペシャルは<mark>ショクワンダー</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ホクサイ彗',
+        body: 'サブは<mark>ロボットボム</mark>、スペシャルは<mark>テイオウイカ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'フィンセント',
+        body: 'サブは<mark>カーリングボム</mark>、スペシャルは<mark>ホップソナー</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'フィンセント・ヒュー',
+        body: 'サブは<mark>ポイントセンサー</mark>、スペシャルは<mark>マルチミサイル</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'フィンセントBRNZ',
+        body: 'サブは<mark>スプラッシュシールド</mark>、スペシャルは<mark>ウルトラショット</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'リッター4K',
+        body: 'サブは<mark>トラップ</mark>、スペシャルは<mark>ホップソナー</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'リッター4Kカスタム',
+        body: 'サブは<mark>ジャンプビーコン</mark>、スペシャルは<mark>テイオウイカ</mark>。',
+    },
+    {
+        category: 'ブキセット',
         title: 'スプラチャージャー',
         body: 'サブは<mark>スプラッシュボム</mark>、スペシャルは<mark>キューインキ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'スプラチャージャーコラボ',
+        body: 'サブは<mark>スプラッシュシールド</mark>、スペシャルは<mark>トリプルトルネード</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'オーダーチャージャー レプリカ',
+        body: 'サブは<mark>スプラッシュボム</mark>、スペシャルは<mark>キューインキ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'スプラチャージャーFRST',
+        body: 'サブは<mark>スプリンクラー</mark>、スペシャルは<mark>カニタンク</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: '14式竹筒銃・甲',
+        body: 'サブは<mark>ロボットボム</mark>、スペシャルは<mark>メガホンレーザー5.1ch</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: '14式竹筒銃・乙',
+        body: 'サブは<mark>タンサンボム</mark>、スペシャルは<mark>デコイチラシ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'スクイックリンα',
+        body: 'サブは<mark>ポイントセンサー</mark>、スペシャルは<mark>グレートバリア</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'スクイックリンβ',
+        body: 'サブは<mark>ロボットボム</mark>、スペシャルは<mark>ショクワンダー</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ソイチューバー',
+        body: 'サブは<mark>トーピード</mark>、スペシャルは<mark>マルチミサイル</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ソイチューバーカスタム',
+        body: 'サブは<mark>タンサンボム</mark>、スペシャルは<mark>ウルトラハンコ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'スプラスコープ',
+        body: 'サブは<mark>スプラッシュボム</mark>、スペシャルは<mark>キューインキ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'スプラスコープコラボ',
+        body: 'サブは<mark>スプラッシュシールド</mark>、スペシャルは<mark>トリプルトルネード</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'スプラスコープFRST',
+        body: 'サブは<mark>スプリンクラー</mark>、スペシャルは<mark>カニタンク</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: '4Kスコープ',
+        body: 'サブは<mark>トラップ</mark>、スペシャルは<mark>ホップソナー</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'R-PEN/5H',
+        body: 'サブは<mark>スプリンクラー</mark>、スペシャルは<mark>エナジースタンド</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'R-PEN/5B',
+        body: 'サブは<mark>スプラッシュシールド</mark>、スペシャルは<mark>アメフラシ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'スクリュースロッシャー',
+        body: 'サブは<mark>タンサンボム</mark>、スペシャルは<mark>ナイスダマ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'スクリュースロッシャーネオ',
+        body: 'サブは<mark>ポイントセンサー</mark>、スペシャルは<mark>ウルトラショット</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'エクスプロッシャー',
+        body: 'サブは<mark>ポイントセンサー</mark>、スペシャルは<mark>アメフラシ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'エクスプロッシャーカスタム',
+        body: 'サブは<mark>スプラッシュシールド</mark>、スペシャルは<mark>ウルトラチャクチ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'オーバーフロッシャー',
+        body: 'サブは<mark>スプリンクラー</mark>、スペシャルは<mark>アメフラシ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'オーバーフロッシャーデコ',
+        body: 'サブは<mark>ラインマーカー</mark>、スペシャルは<mark>テイオウイカ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'バケットスロッシャー',
+        body: 'サブは<mark>スプラッシュボム</mark>、スペシャルは<mark>トリプルトルネード</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'バケットスロッシャーデコ',
+        body: 'サブは<mark>ラインマーカー</mark>、スペシャルは<mark>ショクワンダー</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'オーダースロッシャー レプリカ',
+        body: 'サブは<mark>スプラッシュボム</mark>、スペシャルは<mark>トリプルトルネード</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ヒッセン',
+        body: 'サブは<mark>ポイズンミスト</mark>、スペシャルは<mark>ジェットパック</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ヒッセン・ヒュー',
+        body: 'サブは<mark>タンサンボム</mark>、スペシャルは<mark>エナジースタンド</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ヒッセンASH',
+        body: 'サブは<mark>スプラッシュボム</mark>、スペシャルは<mark>スミナガシート</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'モップリン',
+        body: 'サブは<mark>キューバンボム</mark>、スペシャルは<mark>サメライド</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'モップリンD',
+        body: 'サブは<mark>ジャンプビーコン</mark>、スペシャルは<mark>ホップソナー</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'モップリン角',
+        body: 'サブは<mark>カーリング</mark>、スペシャルは<mark>カニタンク</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ハイドラント',
+        body: 'サブは<mark>ロボットボム</mark>、スペシャルは<mark>ナイスダマ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ハイドラント・カスタム',
+        body: 'サブは<mark>トラップ</mark>、スペシャルは<mark>スミナガシート</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ハイドラント圧',
+        body: 'サブは<mark>スプリンクラー</mark>、スペシャルは<mark>グレートバリア</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'クーゲルシュライバー',
+        body: 'サブは<mark>タンサンボム</mark>、スペシャルは<mark>ジェットパック</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'クーゲルシュライバー・ヒュー',
+        body: 'サブは<mark>トラップ</mark>、スペシャルは<mark>キューインキ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'スプラスピナー',
+        body: 'サブは<mark>クイックボム</mark>、スペシャルは<mark>ウルトラハンコ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'スプラスピナーコラボ',
+        body: 'サブは<mark>ポイズンミスト</mark>、スペシャルは<mark>グレートバリア</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'スプラスピナーPYTN',
+        body: 'サブは<mark>ジャンプビーコン</mark>、スペシャルは<mark>ウルトラショット</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ノーチラス47',
+        body: 'サブは<mark>ポイントセンサー</mark>、スペシャルは<mark>アメフラシ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ノーチラス79',
+        body: 'サブは<mark>キューバンボム</mark>、スペシャルは<mark>ウルトラチャクチ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'バレルスピナー',
+        body: 'サブは<mark>スプリンクラー</mark>、スペシャルは<mark>ホップソナー</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'バレルスピナーデコ',
+        body: 'サブは<mark>ポイントセンサー</mark>、スペシャルは<mark>テイオウイカ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'オーダースピナー レプリカ',
+        body: 'サブは<mark>スプリンクラー</mark>、スペシャルは<mark>ホップソナー</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'イグザミナー',
+        body: 'サブは<mark>カーリングボム</mark>、スペシャルは<mark>エナジースタンド</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'イグザミナー・ヒュー',
+        body: 'サブは<mark>スプラッシュボム</mark>、スペシャルは<mark>カニタンク</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ケルビン525',
+        body: 'サブは<mark>スプラッシュシールド</mark>、スペシャルは<mark>ナイスダマ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ケルビン525デコ',
+        body: 'サブは<mark>ポイントセンサー</mark>、スペシャルは<mark>ウルトラショット</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'クアッドホッパーブラック',
+        body: 'サブは<mark>ロボットボム</mark>、スペシャルは<mark>サメライド</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'クアッドホッパーホワイト',
+        body: 'サブは<mark>スプリンクラー</mark>、スペシャルは<mark>ショクワンダー</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'スパッタリー',
+        body: 'サブは<mark>ジャンプビーコン</mark>、スペシャルは<mark>エナジースタンド</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'スパッタリー・ヒュー',
+        body: 'サブは<mark>トーピード</mark>、スペシャルは<mark>サメライド</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'スパッタリーOWL',
+        body: 'サブは<mark>スプラッシュボム</mark>、スペシャルは<mark>メガホンレーザー5.1ch</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'スプラマニューバー',
+        body: 'サブは<mark>キューバンボム</mark>、スペシャルは<mark>カニタンク</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'スプラマニューバーコラボ',
+        body: 'サブは<mark>カーリングボム</mark>、スペシャルは<mark>ウルトラチャクチ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'オーダーマニューバー レプリカ',
+        body: 'サブは<mark>キューバンボム</mark>、スペシャルは<mark>カニタンク</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'スプラマニューバー耀',
+        body: 'サブは<mark>タンサンボム</mark>、スペシャルは<mark>グレートバリア</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'デュアルスイーパー',
+        body: 'サブは<mark>スプラッシュボム</mark>、スペシャルは<mark>ホップソナー</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'デュアルスイーパーカスタム',
+        body: 'サブは<mark>ジャンプビーコン</mark>、スペシャルは<mark>デコイチラシ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'デュアルスイーパー蹄',
+        body: 'サブは<mark>ポイントセンサー</mark>、スペシャルは<mark>スミナガシート</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ガエンFF',
+        body: 'サブは<mark>トラップ</mark>、スペシャルは<mark>メガホンレーザー5.1ch</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ガエンFFカスタム',
+        body: 'サブは<mark>クイックボム</mark>、スペシャルは<mark>トリプルトルネード</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'スパイガジェット',
+        body: 'サブは<mark>トラップ</mark>、スペシャルは<mark>サメライド</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'スパイガジェットソレーラ',
+        body: 'サブは<mark>トーピード</mark>、スペシャルは<mark>スミナガシート</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'スパイガジェット繚',
+        body: 'サブは<mark>カーリングボム</mark>、スペシャルは<mark>メガホンレーザー5.1ch</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'キャンピングシェルター',
+        body: 'サブは<mark>ジャンプビーコン</mark>、スペシャルは<mark>キューインキ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'キャンピングシェルターソレーラ',
+        body: 'サブは<mark>トラップ</mark>、スペシャルは<mark>ウルトラショット</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'キャンピングシェルターCREM',
+        body: 'サブは<mark>ポイズンミスト</mark>、スペシャルは<mark>デコイチラシ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'パラシェルター',
+        body: 'サブは<mark>スプリンクラー</mark>、スペシャルは<mark>トリプルトルネード</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'パラシェルターソレーラ',
+        body: 'サブは<mark>ロボットボム</mark>、スペシャルは<mark>ジェットパック</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'オーダーシェルター レプリカ',
+        body: 'サブは<mark>スプリンクラー</mark>、スペシャルは<mark>トリプルトルネード</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: '24式張替傘・甲',
+        body: 'サブは<mark>ラインマーカー</mark>、スペシャルは<mark>グレートバリア</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: '24式張替傘・乙',
+        body: 'サブは<mark>ポイズンミスト</mark>、スペシャルは<mark>ウルトラチャクチ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'トライストリンガー',
+        body: 'サブは<mark>ポイズンミスト</mark>、スペシャルは<mark>メガホンレーザー5.1ch</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'トライストリンガーコラボ',
+        body: 'サブは<mark>スプリンクラー</mark>、スペシャルは<mark>デコイチラシ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'オーダーストリンガー レプリカ',
+        body: 'サブは<mark>ポイズンミスト</mark>、スペシャルは<mark>メガホンレーザー5.1ch</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'トライストリンガー燈',
+        body: 'サブは<mark>ラインマーカー</mark>、スペシャルは<mark>ジェットパック</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'LACT-450',
+        body: 'サブは<mark>カーリングボム</mark>、スペシャルは<mark>マルチミサイル</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'LACT-450デコ',
+        body: 'サブは<mark>スプラッシュシールド</mark>、スペシャルは<mark>サメライド</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'LACT-450MILK',
+        body: 'サブは<mark>トーピード</mark>、スペシャルは<mark>ナイスダマ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'フルイドV',
+        body: 'サブは<mark>ロボットボム</mark>、スペシャルは<mark>ウルトラハンコ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'フルイドVカスタム',
+        body: 'サブは<mark>ポイントセンサー</mark>、スペシャルは<mark>ホップソナー</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ドライブワイパー',
+        body: 'サブは<mark>トーピード</mark>、スペシャルは<mark>ウルトラハンコ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ドライブワイパーデコ',
+        body: 'サブは<mark>ジャンプビーコン</mark>、スペシャルは<mark>マルチミサイル</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ドライブワイパーRUST',
+        body: 'サブは<mark>カーリングボム</mark>、スペシャルは<mark>ウルトラショット</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ジムワイパー',
+        body: 'サブは<mark>クイックボム</mark>、スペシャルは<mark>ショクワンダー</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ジムワイパー・ヒュー',
+        body: 'サブは<mark>ポイズンミスト</mark>、スペシャルは<mark>カニタンク</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'オーダーワイパー レプリカ',
+        body: 'サブは<mark>クイックボム</mark>、スペシャルは<mark>ショクワンダー</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'ジムワイパー封',
+        body: 'サブは<mark>ロボットボム</mark>、スペシャルは<mark>ナイスダマ</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'デンタルワイパーミント',
+        body: 'サブは<mark>キューバンボム</mark>、スペシャルは<mark>グレートバリア</mark>。',
+    },
+    {
+        category: 'ブキセット',
+        title: 'デンタルワイパースミ',
+        body: 'サブは<mark>スプラッシュシールド</mark>、スペシャルは<mark>ジェットパック</mark>。',
     },
 ];
 
@@ -513,6 +1493,7 @@ const categoryClassName = {
     'メイン': 'main',
     'サブ': 'sub',
     'スペシャル': 'special',
+    'ギアパワー': 'gear-power',
     'ブキセット': 'weapon-set',
 };
 
@@ -520,10 +1501,16 @@ const categoryClassName = {
 let index = 0;
 
 // 要素
-const nextButton = document.querySelector('#next'); // ネクストボタン
+const backButton = document.querySelector('#back'); // もどるボタン
+const nextButton = document.querySelector('#next'); // すすむボタン
 const cardCategory = document.querySelector('#card-category'); // カテゴリー
 const cardTitle = document.querySelector('#card-title'); // タイトル
 const cardBody = document.querySelector('#card-body'); // 本文
+const mainCheck = document.querySelector('#main'); // メインのチェックボックス
+const subCheck = document.querySelector('#sub'); // サブのチェックボックス
+const specialCheck = document.querySelector('#special'); // スペシャルのチェックボックス
+const gearPowerCheck = document.querySelector('#gear-power'); // スペシャルのチェックボックス
+const weaponSetCheck = document.querySelector('#weapon-set'); // ブキセットのチェックボックス
 
 // カードをシャッフル
 for(let i = 0; i < card.length - 1; i++) {
@@ -533,18 +1520,63 @@ for(let i = 0; i < card.length - 1; i++) {
 
 // カードを表示
 const viewCard = () => {
-    if(card.length <= index) index = 0;
     cardTitle.innerHTML = card[index].title;
     cardCategory.innerHTML = card[index].category;
     cardBody.innerHTML = card[index].body;
     cardCategory.className = categoryClassName[card[index].category];
 }
-viewCard();
 
-// 次のカードを表示
-const nextCard = (event) => {
-    index++;
+// 前のカードを表示
+const backCard = (event) => {
+    if(
+        !mainCheck.checked &&
+        !subCheck.checked &&
+        !specialCheck.checked &&
+        !gearPowerCheck.checked &&
+        !weaponSetCheck.checked
+    ) return;
+
+    let c = null;
+
+    do {
+        index--;
+        if(index < 0) index = card.length - 1;
+        c = card[index].category;
+    } while (
+        c === 'メイン' && !mainCheck.checked ||
+        c === 'サブ' && !subCheck.checked ||
+        c === 'スペシャル' && !specialCheck.checked ||
+        c === 'ギアパワー' && !gearPowerCheck.checked ||
+        c === 'ブキセット' && !weaponSetCheck.checked
+    );
     viewCard();
 };
 
-nextButton.addEventListener('click', nextCard); // ネクストボタンを押した
+// 次のカードを表示
+const nextCard = (event) => {
+    if(
+        !mainCheck.checked &&
+        !subCheck.checked &&
+        !specialCheck.checked &&
+        !gearPowerCheck.checked &&
+        !weaponSetCheck.checked
+    ) return;
+
+    let c = null;
+
+    do {
+        index++;
+        if(card.length <= index) index = 0;
+        c = card[index].category;
+    } while (
+        c === 'メイン' && !mainCheck.checked ||
+        c === 'サブ' && !subCheck.checked ||
+        c === 'スペシャル' && !specialCheck.checked ||
+        c === 'ギアパワー' && !gearPowerCheck.checked ||
+        c === 'ブキセット' && !weaponSetCheck.checked
+    );
+    viewCard();
+};
+
+backButton.addEventListener('click', backCard); // 戻るボタンを押した
+nextButton.addEventListener('click', nextCard); // 進むボタンを押した
