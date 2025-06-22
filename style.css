@@ -158,11 +158,20 @@ input[type="checkbox"] {
 }
 
 #change-button {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     border-radius: 0.25rem;
     gap: 0.25rem;
     display: grid;
+}
+
+#number {
+    color: #669;
+    padding-block: 1rem;
+    border-style: none;
+    border-radius: 0.25rem;
+    inline-size: 100%;
+    text-align: center;
 }
 
 #back {

@@ -1,7 +1,14 @@
 'use strict';
 
+const version = '0.0.3';
+
 // 知識集
 const card = [
+    {
+        category: version,
+        title: 'スプラトゥーン3 知識カード',
+        body: '基本的な知識を<mark>ランダムに表示していきます</mark>。「すすむ」ボタンを押すと<mark>次のカードを表示します</mark>。カテゴリーのボタンを押して<mark>表示するカテゴリーを絞る</mark>こともできます。Ver. 10対応です。',
+    },
     {
         category: 'サブ',
         title: 'スプラッシュボム',
@@ -1502,6 +1509,7 @@ let index = 0;
 
 // 要素
 const backButton = document.querySelector('#back'); // もどるボタン
+const numberDiv = document.querySelector('#number'); // ナンバー
 const nextButton = document.querySelector('#next'); // すすむボタン
 const cardCategory = document.querySelector('#card-category'); // カテゴリー
 const cardTitle = document.querySelector('#card-title'); // タイトル
@@ -1513,7 +1521,7 @@ const gearPowerCheck = document.querySelector('#gear-power'); // スペシャル
 const weaponSetCheck = document.querySelector('#weapon-set'); // ブキセットのチェックボックス
 
 // カードをシャッフル
-for(let i = 0; i < card.length - 1; i++) {
+for(let i = 1; i < card.length - 1; i++) {
     const r = i + Math.floor(Math.random() * (card.length - i)); // i以降のランダムなインデクス
     [card[i], card[r]] = [card[r], card[i]]; // 交換
 }
@@ -1524,18 +1532,12 @@ const viewCard = () => {
     cardCategory.innerHTML = card[index].category;
     cardBody.innerHTML = card[index].body;
     cardCategory.className = categoryClassName[card[index].category];
+    numberDiv.textContent = index;
 }
+viewCard();
 
 // 前のカードを表示
 const backCard = (event) => {
-    if(
-        !mainCheck.checked &&
-        !subCheck.checked &&
-        !specialCheck.checked &&
-        !gearPowerCheck.checked &&
-        !weaponSetCheck.checked
-    ) return;
-
     let c = null;
 
     do {
@@ -1543,25 +1545,19 @@ const backCard = (event) => {
         if(index < 0) index = card.length - 1;
         c = card[index].category;
     } while (
-        c === 'メイン' && !mainCheck.checked ||
-        c === 'サブ' && !subCheck.checked ||
-        c === 'スペシャル' && !specialCheck.checked ||
-        c === 'ギアパワー' && !gearPowerCheck.checked ||
-        c === 'ブキセット' && !weaponSetCheck.checked
+        c !== version && (
+            c === 'メイン' && !mainCheck.checked ||
+            c === 'サブ' && !subCheck.checked ||
+            c === 'スペシャル' && !specialCheck.checked ||
+            c === 'ギアパワー' && !gearPowerCheck.checked ||
+            c === 'ブキセット' && !weaponSetCheck.checked
+        )
     );
     viewCard();
 };
 
 // 次のカードを表示
 const nextCard = (event) => {
-    if(
-        !mainCheck.checked &&
-        !subCheck.checked &&
-        !specialCheck.checked &&
-        !gearPowerCheck.checked &&
-        !weaponSetCheck.checked
-    ) return;
-
     let c = null;
 
     do {
@@ -1569,11 +1565,13 @@ const nextCard = (event) => {
         if(card.length <= index) index = 0;
         c = card[index].category;
     } while (
-        c === 'メイン' && !mainCheck.checked ||
-        c === 'サブ' && !subCheck.checked ||
-        c === 'スペシャル' && !specialCheck.checked ||
-        c === 'ギアパワー' && !gearPowerCheck.checked ||
-        c === 'ブキセット' && !weaponSetCheck.checked
+        c !== version && (
+            c === 'メイン' && !mainCheck.checked ||
+            c === 'サブ' && !subCheck.checked ||
+            c === 'スペシャル' && !specialCheck.checked ||
+            c === 'ギアパワー' && !gearPowerCheck.checked ||
+            c === 'ブキセット' && !weaponSetCheck.checked
+        )
     );
     viewCard();
 };
