@@ -1,22 +1,22 @@
 /* 横長 */
-@media (min-aspect-ratio: 4/3) {
+@media (orientation: landscape) {
     main {
-        inline-size: calc(100svh * 4 / 3);
+        inline-size: calc(100svh);
         block-size: 100svh;
-        left: calc(50svw - 50svh * 4 / 3);
+        left: calc(50svw - 50svh);
         top: 0;
     }
     :root {
-        font-size: calc(5svh * 4 / 3 * 0.999);
+        font-size: calc(5svh * 0.999);
     }
 }
 /* 縦長 */
-@media (max-aspect-ratio: 4/3) {
+@media (orientation: portrait) {
     main {
         inline-size: 100svw;
-        block-size: calc(100svw * 3 / 4);
+        block-size: calc(100svw);
         left: 0;
-        top: calc(50svh - 50svw * 3 / 4);
+        top: calc(50svh - 50svw);
     }
     :root {
         font-size: calc(5svw * 0.999);
@@ -24,9 +24,19 @@
 }
 
 main {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 1 / 1;
     position: fixed;
-    padding: 0.25rem;
+    padding: 0.5rem;
+}
+
+/* うらがえす、めくる */
+:has(#reverse input:checked):has(#show input:not(:checked)) #card,
+:has(#reverse input:not(:checked)):has(#show input:checked) #card {
+    background-color: #669;
+}
+:has(#reverse input:checked):has(#show input:not(:checked)) #card-body,
+:has(#reverse input:not(:checked)):has(#show input:checked) #card-body {
+    visibility: hidden;
 }
 
 #card {
@@ -34,7 +44,7 @@ main {
     color: #336;
     border-radius: 0.25rem;
     inline-size: 100%;
-    block-size: calc(100% - 5rem);
+    block-size: calc(100% - 8rem);
     margin-inline: auto;
     padding-inline: 0.25rem;
     overflow-y: scroll;
@@ -49,15 +59,6 @@ main {
     grid-template-columns: 1fr auto;
     grid-template-rows: 1fr;
     display: grid;
-}
-
-:has(#reverse input:checked):has(#show input:not(:checked)) #card,
-:has(#reverse input:not(:checked)):has(#show input:checked) #card {
-    background-color: #669;
-}
-:has(#reverse input:checked):has(#show input:not(:checked)) #card-body,
-:has(#reverse input:not(:checked)):has(#show input:checked) #card-body {
-    visibility: hidden;
 }
 
 #card-title {
@@ -118,11 +119,7 @@ label:has(#gear-power:checked) {
     color: #000;
 }
 
-#card-body {
-    color: #669;
-    line-height: 1.5em;
-}
-
+#card-body ,
 #card-body div {
     color: #669;
     line-height: 1.5em;
@@ -137,10 +134,10 @@ mark {
 #control {
     inline-size: 100%;
     margin-inline: auto;
-    margin-block-start: 0.25rem;
+    margin-block-start: 0.5rem;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    gap: 0.25rem;
+    gap: 0.5rem;
     display: grid;
 }
 
@@ -149,8 +146,7 @@ mark {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
     border-radius: 0.25rem;
-    padding-inline: 0.25rem;
-    padding-block: 0.25rem;
+    padding: 0.25rem;
     gap: 0.25rem;
     display: grid;
 }
@@ -174,9 +170,9 @@ input[type="checkbox"] {
 #change-button {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 2fr;
-    block-size: 3rem;
+    block-size: 5.5rem;
     border-radius: 0.25rem;
-    gap: 0.25rem;
+    gap: 0.5rem;
     display: grid;
 }
 
@@ -204,6 +200,7 @@ input[type="checkbox"] {
 #reverse {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    font-size: 0.5rem;
 }
 #show {
     grid-column: 2 / 3;
@@ -212,7 +209,6 @@ input[type="checkbox"] {
 #change-button label {
     background-color: #669;
     color: #336;
-    font-size: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
