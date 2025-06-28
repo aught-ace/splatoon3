@@ -1,22 +1,22 @@
 /* 横長 */
-@media (orientation: landscape) {
+@media (min-aspect-ratio: 4/3) {
     main {
-        inline-size: calc(100svh);
+        inline-size: calc(100svh * 4 / 3);
         block-size: 100svh;
-        left: calc(50svw - 50svh);
+        left: calc(50svw - 50svh * 4 / 3);
         top: 0;
     }
     :root {
-        font-size: calc(5svh * 0.999);
+        font-size: calc(5svh * 4 / 3 * 0.999);
     }
 }
 /* 縦長 */
-@media (orientation: portrait) {
+@media (max-aspect-ratio: 4/3) {
     main {
         inline-size: 100svw;
-        block-size: calc(100svw);
+        block-size: calc(100svw * 3 / 4);
         left: 0;
-        top: calc(50svh - 50svw);
+        top: calc(50svh - 50svw * 3 / 4);
     }
     :root {
         font-size: calc(5svw * 0.999);
@@ -24,19 +24,9 @@
 }
 
 main {
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 4 / 3;
     position: fixed;
-    padding: 0.5rem;
-}
-
-/* うらがえす、めくる */
-:has(#reverse input:checked):has(#show input:not(:checked)) #card,
-:has(#reverse input:not(:checked)):has(#show input:checked) #card {
-    background-color: #669;
-}
-:has(#reverse input:checked):has(#show input:not(:checked)) #card-body,
-:has(#reverse input:not(:checked)):has(#show input:checked) #card-body {
-    visibility: hidden;
+    padding: 0.25rem;
 }
 
 #card {
@@ -44,7 +34,7 @@ main {
     color: #336;
     border-radius: 0.25rem;
     inline-size: 100%;
-    block-size: calc(100% - 8rem);
+    block-size: calc(100% - 5rem);
     margin-inline: auto;
     padding-inline: 0.25rem;
     overflow-y: scroll;
@@ -69,9 +59,9 @@ main {
 #card-category {
     background-color: #99C;
     color: #336;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     text-align: center;
-    padding: 0.25rem;
+    padding: 0.1rem;
     block-size: 1rem;
     border-radius: 0.125rem;
     display: block;
@@ -119,8 +109,7 @@ label:has(#gear-power:checked) {
     color: #000;
 }
 
-#card-body ,
-#card-body div {
+#card-body {
     color: #669;
     line-height: 1.5em;
 }
@@ -134,19 +123,20 @@ mark {
 #control {
     inline-size: 100%;
     margin-inline: auto;
-    margin-block-start: 0.5rem;
+    margin-block-start: 0.25rem;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    gap: 0.5rem;
+    gap: 0.25rem;
     display: grid;
 }
 
 #category-button {
     background-color: #669;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: auto auto auto auto auto;
     grid-template-rows: 1fr;
     border-radius: 0.25rem;
-    padding: 0.25rem;
+    padding-inline: 0.25rem;
+    padding-block: 0.25rem;
     gap: 0.25rem;
     display: grid;
 }
@@ -156,8 +146,8 @@ mark {
     color: #669;
     text-align: center;
     border-radius: 0.125rem;
-    font-size: 0.5rem;
-    padding: 0.25rem;
+    font-size: 0.8rem;
+    padding: 0.1rem;
     -webkit-user-select: none; /* Safari */
     user-select: none;
     cursor: pointer;
@@ -168,57 +158,32 @@ input[type="checkbox"] {
 }
 
 #change-button {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr;
-    block-size: 5.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     border-radius: 0.25rem;
-    gap: 0.5rem;
+    gap: calc(33% + 0.25rem * 2);
     display: grid;
 }
 
-/* 下のボタン類 */
 #back {
-    background-color: #CCF;
-    color: #336;
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-}
-#back:active {
     background-color: #99C;
-    color: #003;
+    color: #336;
 }
 #next {
-    background-color: #CCF;
-    color: #336;
-    grid-column: 3 / 4;
-    grid-row: 1 / 3;
+    background-color: #FF3;
+    color: #663;
 }
-#next:active {
-    background-color: #99C;
-    color: #003;
-}
-#reverse {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    font-size: 0.5rem;
-}
-#show {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
-#change-button label {
+#back:active {
     background-color: #669;
     color: #336;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#change-button label:has(:checked) {
-    background-color: #99C;
-    color: #003;
 }
 
-#back, #reverse, #show, #next {
+#next:active {
+    background-color: #CC0;
+    color: #663;
+}
+#back, #next {
+    padding-block: 1rem;
     border-style: none;
     border-radius: 0.25rem;
     inline-size: 100%;
@@ -226,6 +191,10 @@ input[type="checkbox"] {
     -webkit-user-select: none; /* Safari */
     user-select: none;
     cursor: pointer;
+}
+
+ul {
+    list-style: none;
 }
 
 :root, body {
