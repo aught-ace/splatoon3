@@ -1,41 +1,2671 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <meta name="description" content="スプラトゥーン3の基本的な知識をランダムに表示するカードです。">
-        <title>スプラトゥーン3 知識カード</title>
-	    <link href="./icon/icon.svg" rel="icon">
-        <link href="./icon/apple-touch-icon.png" rel="apple-touch-icon">
-        <link href="./style.css" rel="stylesheet">
-    </head>
-    <body>
-        <main>
-            <div id="card">
-                <div id="card-header">
-                    <div id="card-title">スプラトゥーン3 知識カード</div>
-                    <span id="card-category" class="empty">0.0.2</span>
-                </div>
-                <div id="card-body">
-                    スプラトゥーン3の基本的な知識をランダムに表示します。
-                    「すすむ」ボタンを押すと<mark>次のカードを表示します</mark>。
-                    カテゴリーのボタンを押して<mark>表示するカテゴリーを絞る</mark>こともできます。
-                </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="スプラトゥーン3の基本的な知識をランダムに表示するカードです。Ver. 10対応です。">
+    <title>スプラトゥーン3 知識カード</title>
+    <link href="./icon/icon.svg" rel="icon">
+    <link href="./icon/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div id="card" class="none">
+            <div id="card-header">
+                <div id="card-title"></div>
+                <span id="card-category"></span>
             </div>
-            <div id="control">
-                <div id="category-button">
-                    <label><input id="main" type="checkbox" checked>メイン</label>
-                    <label><input id="sub" type="checkbox" checked>サブ</label>
-                    <label><input id="special" type="checkbox" checked>スペシャル</label>
-                    <label><input id="weapon-set" type="checkbox" checked>ブキセット</label>
-                    <label><input id="gear-power" type="checkbox" checked>ギアパワー</label>
-                </div>
-                <div id="change-button">
-                    <button id="back">もどる</button>
-                    <button id="next">すすむ</button>
-                </div>
+            <div id="card-body"></div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スプラトゥーン3 知識カード</div>
+                <span id="version" class="card-category version">0.0.7</span>
             </div>
-        </main>
-        <script src="./main.js" defer></script>
-    </body>
+            <div class="card-body">
+                基本的な知識を<mark>ランダムに表示します</mark>。
+                すすむを押すと次のカードを表示します。
+                カテゴリーのボタンを押して<mark>表示するカテゴリーを絞る</mark>こともできます。
+                カードをうらがえす機能は<mark>内容を覚えるのに役立ちます</mark>。
+                Ver. 10対応です。
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スプラシューター</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>キューバンボム</mark>、</div>
+                <div>スペシャルは<mark>ウルトラショット</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ヒーローシューター レプリカ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>キューバンボム</mark>、</div>
+                <div>スペシャルは<mark>ウルトラショット</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">オーダーシューター レプリカ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>キューバンボム</mark>、</div>
+                <div>スペシャルは<mark>ウルトラショット</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スプラシューターコラボ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュボム</mark>、</div>
+                <div>スペシャルは<mark>トリプルトルネード</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">オクタシューター レプリカ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュボム</mark>、</div>
+                <div>スペシャルは<mark>トリプルトルネード</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スプラシューター煌</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>クイックボム</mark>、</div>
+                <div>スペシャルは<mark>テイオウイカ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">.96ガロン</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプリンクラー</mark>、</div>
+                <div>スペシャルは<mark>キューインキ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">.96ガロンデコ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュシールド</mark>、</div>
+                <div>スペシャルは<mark>テイオウイカ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">.96ガロン爪</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ラインマーカー</mark>、</div>
+                <div>スペシャルは<mark>エナジースタンド</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">シャープマーカー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>クイックボム</mark>、</div>
+                <div>スペシャルは<mark>カニタンク</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">シャープマーカーネオ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>キューバンボム</mark>、</div>
+                <div>スペシャルは<mark>トリプルトルネード</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">シャープマーカーGECK</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ポイズンミスト</mark>、</div>
+                <div>スペシャルは<mark>アメフラシ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">わかばシューター</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュボム</mark>、</div>
+                <div>スペシャルは<mark>グレートバリア</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">もみじシューター</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>トーピード</mark>、</div>
+                <div>スペシャルは<mark>ホップソナー</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">.52ガロン</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュシールド</mark>、</div>
+                <div>スペシャルは<mark>メガホンレーザー5.1ch</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">.52ガロンデコ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>カーリングボム</mark>、</div>
+                <div>スペシャルは<mark>スミナガシート</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">H3リールガン</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ポイントセンサー</mark>、</div>
+                <div>スペシャルは<mark>エナジースタンド</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">H3リールガンD</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュシールド</mark>、</div>
+                <div>スペシャルは<mark>グレートバリア</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">H3リールガンSNAK</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>キューバンボム</mark>、</div>
+                <div>スペシャルは<mark>トリプルトルネード</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">L3リールガン</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>カーリングボム</mark>、</div>
+                <div>スペシャルは<mark>カニタンク</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">L3リールガンD</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>クイックボム</mark>、</div>
+                <div>スペシャルは<mark>ウルトラハンコ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">L3リールガン箔</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュボム</mark>、</div>
+                <div>スペシャルは<mark>ジェットパック</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">N-ZAP85</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>キューバンボム</mark>、</div>
+                <div>スペシャルは<mark>エナジースタンド</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">N-ZAP89</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ロボットボム</mark>、</div>
+                <div>スペシャルは<mark>デコイチラシ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ジェットスイーパー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ラインマーカー</mark>、</div>
+                <div>スペシャルは<mark>キューインキ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ジェットスイーパーカスタム</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ポイズンミスト</mark>、</div>
+                <div>スペシャルは<mark>アメフラシ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ジェットスイーパーCOBR</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>クイックボム</mark>、</div>
+                <div>スペシャルは<mark>ウルトラチャクチ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">プライムシューター</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ラインマーカー</mark>、</div>
+                <div>スペシャルは<mark>カニタンク</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">プライムシューターコラボ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>キューバンボム</mark>、</div>
+                <div>スペシャルは<mark>ナイスダマ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">プライムシューターFRZN</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュボム</mark>、</div>
+                <div>スペシャルは<mark>マルチミサイル</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">プロモデラーMG</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>タンサンボム</mark>、</div>
+                <div>スペシャルは<mark>サメライド</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">プロモデラーRG</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプリンクラー</mark>、</div>
+                <div>スペシャルは<mark>ナイスダマ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">プロモデラー彩</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>クイックボム</mark>、</div>
+                <div>スペシャルは<mark>スミナガシート</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ボールドマーカー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>カーリングボム</mark>、</div>
+                <div>スペシャルは<mark>ウルトラハンコ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ボールドマーカーネオ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ジャンプビーコン</mark>、</div>
+                <div>スペシャルは<mark>メガホンレーザー5.1ch</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ボトルガイザー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュシールド</mark>、</div>
+                <div>スペシャルは<mark>ウルトラショット</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ボトルガイザーフォイル</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ロボットボム</mark>、</div>
+                <div>スペシャルは<mark>スミナガシート</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スペースシューター</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ポイントセンサー</mark>、</div>
+                <div>スペシャルは<mark>メガホンレーザー5.1ch</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スペースシューターコラボ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>トラップ</mark>、</div>
+                <div>スペシャルは<mark>ジェットパック</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ロングブラスター</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>キューバンボム</mark>、</div>
+                <div>スペシャルは<mark>ホップソナー</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ロングブラスターカスタム</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュボム</mark>、</div>
+                <div>スペシャルは<mark>テイオウイカ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ホットブラスター</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ロボットボム</mark>、</div>
+                <div>スペシャルは<mark>グレートバリア</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ホットブラスターカスタム</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ポイントセンサー</mark>、</div>
+                <div>スペシャルは<mark>ウルトラチャクチ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ホットブラスター艶</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ジャンプビーコン</mark>、</div>
+                <div>スペシャルは<mark>カニタンク</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">クラッシュブラスター</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュボム</mark>、</div>
+                <div>スペシャルは<mark>ウルトラショット</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">クラッシュブラスターネオ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>カーリングボム</mark>、</div>
+                <div>スペシャルは<mark>デコイチラシ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Rブラスターエリート</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ポイズンミスト</mark>、</div>
+                <div>スペシャルは<mark>キューインキ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Rブラスターエリートデコ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ラインマーカー</mark>、</div>
+                <div>スペシャルは<mark>メガホンレーザー5.1ch</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">RブラスターエリートWNTR</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>キューバンボム</mark>、</div>
+                <div>スペシャルは<mark>エナジースタンド</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ノヴァブラスター</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュボム</mark>、</div>
+                <div>スペシャルは<mark>ショクワンダー</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ノヴァブラスターネオ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>タンサンボム</mark>、</div>
+                <div>スペシャルは<mark>ウルトラハンコ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">オーダーブラスター レプリカ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュボム</mark>、</div>
+                <div>スペシャルは<mark>ショクワンダー</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ラピッドブラスター</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>トラップ</mark>、</div>
+                <div>スペシャルは<mark>トリプルトルネード</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ラピッドブラスターデコ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>トーピード</mark>、</div>
+                <div>スペシャルは<mark>ジェットパック</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">S-BLAST92</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプリンクラー</mark>、</div>
+                <div>スペシャルは<mark>サメライド</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">S-BLAST91</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>クイックボム</mark>、</div>
+                <div>スペシャルは<mark>ナイスダマ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ダイナモローラー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプリンクラー</mark>、</div>
+                <div>スペシャルは<mark>エナジースタンド</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ダイナモローラーテスラ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュボム</mark>、</div>
+                <div>スペシャルは<mark>デコイチラシ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ダイナモローラー冥</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ポイントセンサー</mark>、</div>
+                <div>スペシャルは<mark>メガホンレーザー5.1ch</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スプラローラー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>カーリングボム</mark>、</div>
+                <div>スペシャルは<mark>グレートバリア</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スプラローラーコラボ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ジャンプビーコン</mark>、</div>
+                <div>スペシャルは<mark>テイオウイカ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">オーダーローラー レプリカ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>カーリングボム</mark>、</div>
+                <div>スペシャルは<mark>グレートバリア</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ヴァリアブルローラー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>トラップ</mark>、</div>
+                <div>スペシャルは<mark>マルチミサイル</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ヴァリアブルローラーフォイル</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>キューバンボム</mark>、</div>
+                <div>スペシャルは<mark>スミナガシート</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">カーボンローラー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ロボットボム</mark>、</div>
+                <div>スペシャルは<mark>ショクワンダー</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">カーボンローラーデコ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>クイックボム</mark>、</div>
+                <div>スペシャルは<mark>ウルトラショット</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">カーボンローラーANGL</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>タンサンボム</mark>、</div>
+                <div>スペシャルは<mark>デコイチラシ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ワイドローラー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュシールド</mark>、</div>
+                <div>スペシャルは<mark>キューインキ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ワイドローラーコラボ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ラインマーカー</mark>、</div>
+                <div>スペシャルは<mark>アメフラシ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ワイドローラー惑</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>トーピード</mark>、</div>
+                <div>スペシャルは<mark>ウルトラチャクチ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">パブロ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュボム</mark>、</div>
+                <div>スペシャルは<mark>メガホンレーザー5.1ch</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">パブロ・ヒュー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>トラップ</mark>、</div>
+                <div>スペシャルは<mark>ウルトラハンコ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ホクサイ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>キューバンボム</mark>、</div>
+                <div>スペシャルは<mark>ショクワンダー</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ホクサイ・ヒュー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ジャンプビーコン</mark>、</div>
+                <div>スペシャルは<mark>アメフラシ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">オーダーブラシ レプリカ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>キューバンボム</mark>、</div>
+                <div>スペシャルは<mark>ショクワンダー</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ホクサイ彗</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ロボットボム</mark>、</div>
+                <div>スペシャルは<mark>テイオウイカ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">フィンセント</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>カーリングボム</mark>、</div>
+                <div>スペシャルは<mark>ホップソナー</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">フィンセント・ヒュー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ポイントセンサー</mark>、</div>
+                <div>スペシャルは<mark>マルチミサイル</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">フィンセントBRNZ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュシールド</mark>、</div>
+                <div>スペシャルは<mark>ウルトラショット</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">リッター4K</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>トラップ</mark>、</div>
+                <div>スペシャルは<mark>ホップソナー</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">リッター4Kカスタム</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ジャンプビーコン</mark>、</div>
+                <div>スペシャルは<mark>テイオウイカ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スプラチャージャー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュボム</mark>、</div>
+                <div>スペシャルは<mark>キューインキ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スプラチャージャーコラボ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュシールド</mark>、</div>
+                <div>スペシャルは<mark>トリプルトルネード</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">オーダーチャージャー レプリカ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュボム</mark>、</div>
+                <div>スペシャルは<mark>キューインキ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スプラチャージャーFRST</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプリンクラー</mark>、</div>
+                <div>スペシャルは<mark>カニタンク</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">14式竹筒銃・甲</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ロボットボム</mark>、</div>
+                <div>スペシャルは<mark>メガホンレーザー5.1ch</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">14式竹筒銃・乙</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>タンサンボム</mark>、</div>
+                <div>スペシャルは<mark>デコイチラシ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スクイックリンα</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ポイントセンサー</mark>、</div>
+                <div>スペシャルは<mark>グレートバリア</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スクイックリンβ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ロボットボム</mark>、</div>
+                <div>スペシャルは<mark>ショクワンダー</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ソイチューバー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>トーピード</mark>、</div>
+                <div>スペシャルは<mark>マルチミサイル</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ソイチューバーカスタム</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>タンサンボム</mark>、</div>
+                <div>スペシャルは<mark>ウルトラハンコ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スプラスコープ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュボム</mark>、</div>
+                <div>スペシャルは<mark>キューインキ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スプラスコープコラボ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュシールド</mark>、</div>
+                <div>スペシャルは<mark>トリプルトルネード</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スプラスコープFRST</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプリンクラー</mark>、</div>
+                <div>スペシャルは<mark>カニタンク</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">4Kスコープ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>トラップ</mark>、</div>
+                <div>スペシャルは<mark>ホップソナー</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">R-PEN/5H</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプリンクラー</mark>、</div>
+                <div>スペシャルは<mark>エナジースタンド</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">R-PEN/5B</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュシールド</mark>、</div>
+                <div>スペシャルは<mark>アメフラシ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スクリュースロッシャー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>タンサンボム</mark>、</div>
+                <div>スペシャルは<mark>ナイスダマ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スクリュースロッシャーネオ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ポイントセンサー</mark>、</div>
+                <div>スペシャルは<mark>ウルトラショット</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">エクスプロッシャー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ポイントセンサー</mark>、</div>
+                <div>スペシャルは<mark>アメフラシ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">エクスプロッシャーカスタム</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュシールド</mark>、</div>
+                <div>スペシャルは<mark>ウルトラチャクチ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">オーバーフロッシャー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプリンクラー</mark>、</div>
+                <div>スペシャルは<mark>アメフラシ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">オーバーフロッシャーデコ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ラインマーカー</mark>、</div>
+                <div>スペシャルは<mark>テイオウイカ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">バケットスロッシャー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュボム</mark>、</div>
+                <div>スペシャルは<mark>トリプルトルネード</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">バケットスロッシャーデコ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ラインマーカー</mark>、</div>
+                <div>スペシャルは<mark>ショクワンダー</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">オーダースロッシャー レプリカ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュボム</mark>、</div>
+                <div>スペシャルは<mark>トリプルトルネード</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ヒッセン</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ポイズンミスト</mark>、</div>
+                <div>スペシャルは<mark>ジェットパック</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ヒッセン・ヒュー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>タンサンボム</mark>、</div>
+                <div>スペシャルは<mark>エナジースタンド</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ヒッセンASH</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュボム</mark>、</div>
+                <div>スペシャルは<mark>スミナガシート</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">モップリン</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>キューバンボム</mark>、</div>
+                <div>スペシャルは<mark>サメライド</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">モップリンD</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ジャンプビーコン</mark>、</div>
+                <div>スペシャルは<mark>ホップソナー</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">モップリン角</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>カーリング</mark>、</div>
+                <div>スペシャルは<mark>カニタンク</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ハイドラント</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ロボットボム</mark>、</div>
+                <div>スペシャルは<mark>ナイスダマ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ハイドラントカスタム</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>トラップ</mark>、</div>
+                <div>スペシャルは<mark>スミナガシート</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ハイドラント圧</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプリンクラー</mark>、</div>
+                <div>スペシャルは<mark>グレートバリア</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">クーゲルシュライバー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>タンサンボム</mark>、</div>
+                <div>スペシャルは<mark>ジェットパック</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">クーゲルシュライバー・ヒュー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>トラップ</mark>、</div>
+                <div>スペシャルは<mark>キューインキ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スプラスピナー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>クイックボム</mark>、</div>
+                <div>スペシャルは<mark>ウルトラハンコ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スプラスピナーコラボ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ポイズンミスト</mark>、</div>
+                <div>スペシャルは<mark>グレートバリア</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スプラスピナーPYTN</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ジャンプビーコン</mark>、</div>
+                <div>スペシャルは<mark>ウルトラショット</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ノーチラス47</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ポイントセンサー</mark>、</div>
+                <div>スペシャルは<mark>アメフラシ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ノーチラス79</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>キューバンボム</mark>、</div>
+                <div>スペシャルは<mark>ウルトラチャクチ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">バレルスピナー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプリンクラー</mark>、</div>
+                <div>スペシャルは<mark>ホップソナー</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">バレルスピナーデコ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ポイントセンサー</mark>、</div>
+                <div>スペシャルは<mark>テイオウイカ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">オーダースピナー レプリカ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプリンクラー</mark>、</div>
+                <div>スペシャルは<mark>ホップソナー</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">イグザミナー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>カーリングボム</mark>、</div>
+                <div>スペシャルは<mark>エナジースタンド</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">イグザミナー・ヒュー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュボム</mark>、</div>
+                <div>スペシャルは<mark>カニタンク</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ケルビン525</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュシールド</mark>、</div>
+                <div>スペシャルは<mark>ナイスダマ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ケルビン525デコ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ポイントセンサー</mark>、</div>
+                <div>スペシャルは<mark>ウルトラショット</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">クアッドホッパーブラック</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ロボットボム</mark>、</div>
+                <div>スペシャルは<mark>サメライド</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">クアッドホッパーホワイト</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプリンクラー</mark>、</div>
+                <div>スペシャルは<mark>ショクワンダー</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スパッタリー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ジャンプビーコン</mark>、</div>
+                <div>スペシャルは<mark>エナジースタンド</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スパッタリー・ヒュー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>トーピード</mark>、</div>
+                <div>スペシャルは<mark>サメライド</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スパッタリーOWL</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュボム</mark>、</div>
+                <div>スペシャルは<mark>メガホンレーザー5.1ch</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スプラマニューバー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>キューバンボム</mark>、</div>
+                <div>スペシャルは<mark>カニタンク</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スプラマニューバーコラボ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>カーリングボム</mark>、</div>
+                <div>スペシャルは<mark>ウルトラチャクチ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">オーダーマニューバー レプリカ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>キューバンボム</mark>、</div>
+                <div>スペシャルは<mark>カニタンク</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スプラマニューバー耀</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>タンサンボム</mark>、</div>
+                <div>スペシャルは<mark>グレートバリア</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">デュアルスイーパー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュボム</mark>、</div>
+                <div>スペシャルは<mark>ホップソナー</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">デュアルスイーパーカスタム</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ジャンプビーコン</mark>、</div>
+                <div>スペシャルは<mark>デコイチラシ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">デュアルスイーパー蹄</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ポイントセンサー</mark>、</div>
+                <div>スペシャルは<mark>スミナガシート</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ガエンFF</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>トラップ</mark>、</div>
+                <div>スペシャルは<mark>メガホンレーザー5.1ch</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ガエンFFカスタム</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>クイックボム</mark>、</div>
+                <div>スペシャルは<mark>トリプルトルネード</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スパイガジェット</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>トラップ</mark>、</div>
+                <div>スペシャルは<mark>サメライド</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スパイガジェットソレーラ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>トーピード</mark>、</div>
+                <div>スペシャルは<mark>スミナガシート</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スパイガジェット繚</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>カーリングボム</mark>、</div>
+                <div>スペシャルは<mark>メガホンレーザー5.1ch</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">キャンピングシェルター</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ジャンプビーコン</mark>、</div>
+                <div>スペシャルは<mark>キューインキ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">キャンピングシェルターソレーラ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>トラップ</mark>、</div>
+                <div>スペシャルは<mark>ウルトラショット</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">キャンピングシェルターCREM</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ポイズンミスト</mark>、</div>
+                <div>スペシャルは<mark>デコイチラシ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">パラシェルター</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプリンクラー</mark>、</div>
+                <div>スペシャルは<mark>トリプルトルネード</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">パラシェルターソレーラ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ロボットボム</mark>、</div>
+                <div>スペシャルは<mark>ジェットパック</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">オーダーシェルター レプリカ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプリンクラー</mark>、</div>
+                <div>スペシャルは<mark>トリプルトルネード</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">24式張替傘・甲</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ラインマーカー</mark>、</div>
+                <div>スペシャルは<mark>グレートバリア</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">24式張替傘・乙</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ポイズンミスト</mark>、</div>
+                <div>スペシャルは<mark>ウルトラチャクチ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">トライストリンガー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ポイズンミスト</mark>、</div>
+                <div>スペシャルは<mark>メガホンレーザー5.1ch</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">トライストリンガーコラボ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプリンクラー</mark>、</div>
+                <div>スペシャルは<mark>デコイチラシ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">オーダーストリンガー レプリカ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ポイズンミスト</mark>、</div>
+                <div>スペシャルは<mark>メガホンレーザー5.1ch</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">トライストリンガー燈</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ラインマーカー</mark>、</div>
+                <div>スペシャルは<mark>ジェットパック</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">LACT-450</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>カーリングボム</mark>、</div>
+                <div>スペシャルは<mark>マルチミサイル</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">LACT-450デコ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュシールド</mark>、</div>
+                <div>スペシャルは<mark>サメライド</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">LACT-450MILK</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>トーピード</mark>、</div>
+                <div>スペシャルは<mark>ナイスダマ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">フルイドV</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ロボットボム</mark>、</div>
+                <div>スペシャルは<mark>ウルトラハンコ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">フルイドVカスタム</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ポイントセンサー</mark>、</div>
+                <div>スペシャルは<mark>ホップソナー</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ドライブワイパー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>トーピード</mark>、</div>
+                <div>スペシャルは<mark>ウルトラハンコ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ドライブワイパーデコ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ジャンプビーコン</mark>、</div>
+                <div>スペシャルは<mark>マルチミサイル</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ドライブワイパーRUST</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>カーリングボム</mark>、</div>
+                <div>スペシャルは<mark>ウルトラショット</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ジムワイパー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>クイックボム</mark>、</div>
+                <div>スペシャルは<mark>ショクワンダー</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ジムワイパー・ヒュー</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ポイズンミスト</mark>、</div>
+                <div>スペシャルは<mark>カニタンク</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">オーダーワイパー レプリカ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>クイックボム</mark>、</div>
+                <div>スペシャルは<mark>ショクワンダー</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ジムワイパー封</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>ロボットボム</mark>、</div>
+                <div>スペシャルは<mark>ナイスダマ</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">デンタルワイパーミント</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>キューバンボム</mark>、</div>
+                <div>スペシャルは<mark>グレートバリア</mark>。</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">デンタルワイパースミ</div>
+                <span class="card-category weapon-set">ブキセット</span>
+            </div>
+            <div class="card-body">
+                <div>サブは<mark>スプラッシュシールド</mark>、</div>
+                <div>スペシャルは<mark>ジェットパック</mark>。</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スプラシューター</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>バランスが取れた</mark>性能のシューター。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スプラローラー</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>標準的な</mark>性能のローラー。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スプラチャージャー</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>扱いやすい</mark>性能のチャージャー。フルチャージしたまま少しの間インクを泳げる<mark>チャージキープが可能</mark>。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ホットブラスター</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>攻撃力が高め</mark>のブラスター。敵に直撃すると<mark>一撃で倒せる</mark>。射程も短く連射も遅め。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">バケットスロッシャー</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>標準的で扱いやすい</mark>性能のスロッシャー。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スプラマニューバー</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>標準的な</mark>性能のマニューバー。スライドは2回連続で可能。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ホクサイ</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>攻撃に適した</mark>性能のフデ。振るのは少し遅い。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">バレルスピナー</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>射程が長い</mark>スピナー。チャージには時間がかかる。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">トライストリンガー</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>標準的な</mark>性能のストリンガー。3本の矢をチャージしてから放つと<mark>着弾した時に爆発する</mark>。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">プロモデラーMG</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>連射がとても速く塗り性能が高い</mark>シューター。射程はとても短く、弾ブレがとても大きい。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">パラシェルター</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>標準的な</mark>性能のシェルター。開き続けると傘をパージして前進させられる。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ドライブワイパー</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>振るのが速い</mark>ワイパー。普通に振ると横振り、チャージすると縦振りになる。射程もやや長いが攻撃力は低め。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">N-ZAP85</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>連射が速い</mark>シューター。<mark>塗り性能は高い</mark>が、攻撃力は低め。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">カーボンローラー</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>振るのが速い</mark>ローラー。射程は短く攻撃力も低い。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ラピッドブラスター</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>射程が長く連射が速め</mark>のブラスター。敵に直撃しても一撃では倒せない。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">パブロ</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>振るのも塗り進むのもとても速い</mark>フデ。<mark>連続で振ることができる</mark>が攻撃力は低い。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">わかばシューター</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>インク効率がとても高く塗り性能が高い</mark>シューター。弾ブレが大きい。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スペースシューター</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>射程と連射が速いため塗り性能が高い</mark>シューター。攻撃力は低い。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スクイックリンα</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>チャージ時間が短い動きやすい</mark>チャージャー。射程は短い。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">デュアルスイーパー</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>射程が長い</mark>マニューバー。スライド後は<mark>射程が少し伸びる</mark>が、攻撃性能は変わらない。また、スライド後の<mark>硬直中も少し動くことができる</mark>。スライドは2回連続で可能。
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ボールドマーカー</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>連射も速く攻撃力も高め</mark>のシューター。射程は非常に短く弾ブレも大きい。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">プライムシューター</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>射程が長めで攻撃力も高めで弾ブレも少ない</mark>シューター。連射は遅くインク効率が悪い。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スプラスコープ</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body">スプラチャージャー同様<mark>扱いやすく、スコープが付き射程が少しだけ増した</mark>チャージャー。チャージキープはできない。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ヒッセン</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>軽くて振りやすい</mark>スロッシャー。<mark>一度に3方向へインクを飛ばせる</mark>。射程は短く攻撃力は低い。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">LACT-450</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>軽くて塗り性能が高い</mark>ストリンガー。フルチャージしたままインクを泳ぐ<mark>チャージキープが可能</mark>。<mark>チャージして放っても矢が爆発しない</mark>。射程は短く攻撃力は低い。
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">.52ガロン</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>1発の攻撃力が高い</mark>シューター。敵に命中すると<mark>2発で倒せる</mark>。連射は遅く弾ブレが大きい。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ロングブラスター</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>射程が長い</mark>ブラスター。敵に直撃すると<mark>一撃で倒せる</mark>。連射は遅い。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ダイナモローラー</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>攻撃力が高く射程が長い</mark>ローラー。振るのも塗り進みも遅い。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スプラスピナー</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>軽くてチャージ時間が短く扱いやすい</mark>性能のスピナー。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ノヴァブラスター</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>連射が速く短時間で爆発する</mark>弾のブラスター。敵に直撃すると<mark>一撃で倒せる</mark>。射程は短い。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">L3リールガン</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>1トリガーで3つの弾を発射する</mark>シューター。押しっぱなしでは連射できない<mark>。射程もやや長く塗り性能も高め</mark>。敵に4発命中しないと倒すことができない。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">イグザミナー</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>軽く連射が速く連射時間も長い</mark>スピナー。フルチャージするとが<mark>連射が速くなる</mark>。チャージ時間も長い。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">24式張替傘・甲</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>パージするまでの時間が短い</mark>シェルター。<mark>ショットの攻撃力が高い</mark>。<mark>傘は速く前進する</mark>。傘の耐久性は低い。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">フィンセント</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>射程も長く攻撃力も高い</mark>フデ。最初の振り始めが遅い。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">R-PEN/5H</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>連続で撃てる</mark>チャージャー。フルチャージすると<mark>5回連続で撃つことができる</mark>。<mark>塗り性能が高い</mark>。攻撃力は低く敵に2発当てないと倒すことができない。チャージキープもできない。
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スクリュースロッシャー</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>直撃すると攻撃力が高く、周りにインクも飛び散るスクリュー弾が撃てる</mark>スロッシャー。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スパッタリー</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>軽くて連射が速く動きやすい</mark>マニューバー。射程は短い。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ジェットスイーパー</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>射程がとても長い</mark>シューター。連射は遅く攻撃力も低い。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">モップリン</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>1振りで時間差で2つのインクを飛ばせる</mark>スロッシャー。狙いを横に動かしながら振ると<mark>インクが横にばらまかれる</mark>。<mark>塗り性能も高い</mark>。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ジムワイパー</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>攻撃力が高い</mark>ワイパー。普通に振ると横振り、チャージすると縦振りになる。縦振りに必要なチャージ時間は長い。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">シャープマーカー</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>弾ブレがない</mark>シューター。<mark>連射は速い</mark>が攻撃力は低い。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ワイドローラー</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>軽くて塗りの幅が広い</mark>ローラー。<mark>横振りは幅の広いインクを飛ばすことができ、縦振りはインクを遠くに飛ばせる</mark>。<mark>塗り性能が高い</mark>が、攻撃力は低い。
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">キャンピングシェルター</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>傘の横幅が広く耐久性が高い</mark>シェルター。<mark>ショットの射程も長く攻撃力も高い</mark>が、連射はとても遅い。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">.96ガロン</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>攻撃力が高く射程も長い</mark>シューター。敵に命中すると<mark>2発で倒すことができる</mark>。弾ブレが大きく連射は遅い。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">クアッドホッパーブラック</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>4回連続でスライドできる</mark>マニューバー。<mark>スライド中にも弾を発射できる</mark>。攻撃力は低い。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">リッター4K</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>非常に射程が長い</mark>チャージャー。フルチャージしてインクの中を泳ぐ<mark>チャージキープが少しの間可能</mark>。インク消費量は多くチャージ時間も長い。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スパイガジェット</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>傘を開いたまま連射ができる</mark>シェルター。傘のパージはできない。攻撃力は低く傘の耐久性も低い。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ボトルガイザー</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>最初の1発は攻撃力が高く射程が長いが、それ以降の弾は連射が速く塗りに特化している</mark>シューター。手動による連射と自動の連射によって使い分けることができる。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">オーバーフロッシャー</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>地形にバウンドする弾を1振りで4発ずつ撃てる</mark>スロッシャー。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">フルイドV</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>5方向へインクを飛ばせる</mark>ストリンガー。ある程度チャージして撃つとインクを<mark>1か所に撃つ</mark>ことができ、更にチャージしてから撃つと<mark>広くまき散らせる</mark>ことができる。インクは爆発する。チャージは遅い。
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">S-BLAST92</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>地上では遠くで爆発する弾ブレが小さい弾、ジャンプ中は近くで大きく爆発する弾を発射できる</mark>ブラスター。連射は遅い。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ヴァリアブルローラー</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>横振りは軽くて素早く行うことができ、縦振りは遠くまでインクを飛ばせる</mark>ローラー。<mark>縦振りで塗って横振りで攻撃するとよい</mark>。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ハイドラント</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>射程がとても長い</mark>スピナー。インク消費量がとても多くチャージ時間が非常に長い。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ケルビン525</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>スライド後の攻撃力が上がる</mark>マニューバー。<mark>スライド直後の弾は命中すると2発で敵を倒せる</mark>。<mark>2回連続でスライドできる</mark>。連射は遅い。
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">デンタルワイパーミント</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>射程が長く攻撃力が高い</mark>ワイパー。普通の振り方もチャージ斬りも横振りである。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">クラッシュブラスター</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>連射がとても速い</mark>ブラスター。射程は短く攻撃力は低い。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ガエンFF</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>スライド前は射程が長く、スライド後は連射が速い</mark>マニューバー。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">14式竹筒銃・甲</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>高速でチャージできて連射が速く、フルチャージ後も動きやすい</mark>チャージャー。敵に命中しても1発では倒せないため、<mark>フルチャージと通常の2発を連続で当てる</mark>とよい。チャージキープはできない。
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">H3リールガン</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>1トリガーで攻撃力が高い3発ずつの弾を撃つことができる</mark>シューター。敵に<mark>3発すべて当てると1回で倒すことができる</mark>。押しっぱなしでは連射できず、連射も遅い。
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ソイチューバー</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>フルチャージしなくてもインクの中を泳ぐチャージキープを長時間行うことができる</mark>チャージャー。<mark>途中までのチャージでも敵を1撃で倒せる威力になる</mark>。フルチャージにかかる時間は長い。
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Rブラスターエリート</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>射程がとても長い</mark>ブラスター。爆発力は低い。攻撃力も低く、敵に直撃しても1撃では倒せない。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">4Kスコープ</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body">リッター4Kよりも<mark>更に射程が長く、スコープで狙うことができる</mark>チャージャー。チャージキープはできない。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ノーチラス47</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>フルチャージしたままインクを泳ぐチャージキープが可能</mark>なスピナー。発射中に<mark>再チャージができる</mark>。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">エクスプロッシャー</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>放物線を描いて飛び着弾すると爆発する弾を発射する</mark>スロッシャー。連射は遅い。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">クーゲルシュライバー</div>
+                <span class="card-category main">メイン</span>
+            </div>
+            <div class="card-body"><mark>撃ち始めは連射が速いが、撃ち続けると変化して射程が長く弾ブレが小さくなる</mark>スピナー。発射中に<mark>再チャージができる</mark>。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スプラッシュボム</div>
+                <span class="card-category sub">サブ</span>
+            </div>
+            <div class="card-body">地面に接地して<mark>しばらくすると爆発する</mark>ボム。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">キューバンボム</div>
+                <span class="card-category sub">サブ</span>
+            </div>
+            <div class="card-body">地面や壁に<mark>くっつく</mark>ボム。スプラッシュボムより爆発までの<mark>時間が長く、爆風が広い</mark>。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">カーリングボム</div>
+                <span class="card-category sub">サブ</span>
+            </div>
+            <div class="card-body">地面を<mark>塗り進んでから爆発する</mark>ボム。ボタンを押し続けると<mark>早く爆発し、爆風も広くなる</mark>。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ロボットボム</div>
+                <span class="card-category sub">サブ</span>
+            </div>
+            <div class="card-body">着地した場所の周囲を探知し、<mark>自動で相手を追いかける</mark>ボム。相手に<mark>近づくと停止して爆発する</mark>。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">クイックボム</div>
+                <span class="card-category sub">サブ</span>
+            </div>
+            <div class="card-body">何かにぶつかると、<mark>すぐに爆発する</mark>ボム。<mark>インク消費量は少ない</mark>が爆発も小さく攻撃力も低い。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スプリンクラー</div>
+                <span class="card-category sub">サブ</span>
+            </div>
+            <div class="card-body">地面や壁にくっつき、<mark>インクをまき散らす</mark>仕掛け。しばらく設置したままにすると勢いが弱まる。同時に1つまで出せる。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スプラッシュシールド</div>
+                <span class="card-category sub">サブ</span>
+            </div>
+            <div class="card-body"><mark>敵の侵入や攻撃を防ぐ</mark>インクの壁。攻撃されると壊れるまでの時間が早くなる。同時に1つまで出せる。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">タンサンボム</div>
+                <span class="card-category sub">サブ</span>
+            </div>
+            <div class="card-body">
+                ボタンを押しっぱなしにして構え、<mark>操作するほど早くパワーが貯まり</mark>、投げるとパワーに応じて<mark>最大3回連続で爆発する</mark>ボム。コントローラーやスティックやボタンに反応してパワーが貯まる。
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ジャンプビーコン</div>
+                <span class="card-category sub">サブ</span>
+            </div>
+            <div class="card-body">マップ上で選ぶと、<mark>そこにスーパージャンプする</mark>ビーコン。ビーコンを装備していない仲間は<mark>2回跳べる</mark>。同時に3つまで出せる。
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ポイントセンサー</div>
+                <span class="card-category sub">サブ</span>
+            </div>
+            <div class="card-body">投げた場所の近くにいる敵を<mark>マーキングする</mark>装置。マークは<mark>味方全員に見える</mark>。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">トラップ</div>
+                <span class="card-category sub">サブ</span>
+            </div>
+            <div class="card-body">
+                足元に設置し、<mark>敵が近づくと作動する</mark>罠。敵を<mark>マーキングし、ダメージを与える</mark>。敵のインクで塗られても作動する。同時に2つまで出せる。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ポイズンミスト</div>
+                <span class="card-category sub">サブ</span>
+            </div>
+            <div class="card-body">着弾すると毒の霧が発生し、入った敵の<mark>移動を遅くしてインクを減らし続ける</mark>容器。敵が霧の中に<mark>居続けるほど効果が大きくなる</mark>。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ラインマーカー</div>
+                <span class="card-category sub">サブ</span>
+            </div>
+            <div class="card-body">一直線に飛び壁や地面で跳ね返り、<mark>触れた相手をマーキングする</mark>線。<mark>直撃するとダメージを与える</mark>。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">トーピード</div>
+                <span class="card-category sub">サブ</span>
+            </div>
+            <div class="card-body">
+                敵の近くに投げると変形して<mark>相手に向かって飛んでいく</mark>武器。着弾すると<mark>爆発するインクをまき散らす</mark>。攻撃されると撃ち落される。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ウルトラショット</div>
+                <span class="card-category special">スペシャル</span>
+            </div>
+            <div class="card-body">回転しながら飛ぶ3発ずつの強力なショット。<mark>射程がとても長い</mark>。3回まで撃てる。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">グレートバリア</div>
+                <span class="card-category special">スペシャル</span>
+            </div>
+            <div class="card-body">足元に設置する大型の球状のバリア。敵の<mark>外からのインク攻撃を防ぐ</mark>が、敵自体の侵入は防げない。内部中心の装置や頂上の部品を攻撃されると早く壊れる。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ショクワンダー</div>
+                <span class="card-category special">スペシャル</span>
+            </div>
+            <div class="card-body">
+                触腕を伸ばして<mark>ステージを飛び回れる</mark>変身。変身中も<mark>メインで攻撃できる</mark>。インクが切れると変身が解けてスーパージャンプで元の場所に戻る。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">マルチミサイル</div>
+                <span class="card-category special">スペシャル</span>
+            </div>
+            <div class="card-body">カーソルで狙った<mark>最大5つの目標に発射できる</mark>ミサイル。目標の数によってミサイルの数が変わる。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">アメフラシ</div>
+                <span class="card-category special">スペシャル</span>
+            </div>
+            <div class="card-body">
+                インクの雨雲を発生させる装置。雨雲は<mark>少しずつ前進しながらインクを降らせる</mark>。自分や味方の雨を受けると、センプクしていなくてもダメージが素早く回復する。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ナイスダマ</div>
+                <span class="card-category special">スペシャル</span>
+            </div>
+            <div class="card-body">
+                自分や味方が<mark>ナイスのシグナルを送ることで力が貯まる</mark>弾。投げつけると<mark>大きな爆発が起こる</mark>。ナイスを送った味方はスペシャルゲージが少し貯まる。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ホップソナー</div>
+                <span class="card-category special">スペシャル</span>
+            </div>
+            <div class="card-body">
+                かくれた敵をあぶり出す<mark>ウェーブを生み出す</mark>装置。ウェーブが当たると<mark>マーキングしてダメージを与える</mark>。ウェーブは<mark>ジャンプでかわせる</mark>。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">キューインキ</div>
+                <span class="card-category special">スペシャル</span>
+            </div>
+            <div class="card-body">
+                敵が撃った<mark>インクを吸い込むほどゲージが貯まり最後に強力な弾を放てる</mark>装置。吸い込みは敵の動きを遅らせる効果もある。ゲージを最大まで貯めるほか、一定時間が経過しても弾を発射できる。
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">メガホンレーザー5.1ch</div>
+                <span class="card-category special">スペシャル</span>
+            </div>
+            <div class="card-body">敵を<mark>カーソルで狙い自動で追撃する</mark>6つのメガホン型のレーザー。2つずつ作動する。<mark>発動中もメインやサブを使うことができる</mark>。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ジェットパック</div>
+                <span class="card-category special">スペシャル</span>
+            </div>
+            <div class="card-body">
+                インクを噴射して<mark>空を飛びながら付属のランチャーで攻撃できる</mark>装置。ジャンプのボタンで<mark>一時的に高度を上げられる</mark>。地面の高さに応じて高度が変わる。地面がない所や金網では飛び続けられない。
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ウルトラハンコ</div>
+                <span class="card-category special">スペシャル</span>
+            </div>
+            <div class="card-body"><mark>前方を叩きつけながら前進できる</mark>巨大なハンコ。ハンコを<mark>遠くに投げつけて攻撃することもできる</mark>が、スペシャルの時間が終了する。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">カニタンク</div>
+                <span class="card-category special">スペシャル</span>
+            </div>
+            <div class="card-body"><mark>連射ショットやカノン砲で攻撃できる</mark>戦車。ZLで球状になって転がり、<mark>防御したり壁を登ったりできる</mark>。背中が弱点である。
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">サメライド</div>
+                <span class="card-category special">スペシャル</span>
+            </div>
+            <div class="card-body">直線のコースを作り、<mark>前方に突撃して爆発する</mark>フロート。ボタンを押すかコースから外れると爆発する。コースもあらかじめインクで塗られる。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">トリプルトルネード</div>
+                <span class="card-category special">スペシャル</span>
+            </div>
+            <div class="card-body">投げて<mark>着弾するとその場所にインクの竜巻が撃ち込まれる</mark>装置。竜巻の形状はとても縦に長い。3つまで投げられる。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">エナジースタンド</div>
+                <span class="card-category special">スペシャル</span>
+            </div>
+            <div class="card-body">
+                一部の<mark>能力を一時的に強化する</mark>ドリンクが入った冷蔵庫。4本入りで自分や味方1人につき1本だけ飲める。効果中に<mark>やられるとすぐに復活できる</mark>が効果は切れる。
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">デコイチラシ</div>
+                <span class="card-category special">スペシャル</span>
+            </div>
+            <div class="card-body">広範囲に大量に発射し、<mark>スーパージャンプそっくりなマーカーが表示されて着地する</mark>デコイ。一定時間で爆発するが、攻撃されると爆発せずに壊れる。
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">テイオウイカ</div>
+                <span class="card-category special">スペシャル</span>
+            </div>
+            <div class="card-body"><mark>敵のインク攻撃を弾く</mark>巨大なイカまたはタコへの変身。ジャンプすると<mark>強力なスピンによる体当たりができる</mark>他、チャージして<mark>前方に突撃することもできる</mark>。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ウルトラチャクチ</div>
+                <span class="card-category special">スペシャル</span>
+            </div>
+            <div class="card-body">空中に浮き上がって<mark>地面に叩きつける</mark>、自分自身とインクを合わせた3つのこぶし。スーパージャンプ中に使うと自分のこぶしだけを叩きつける。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スミナガシート</div>
+                <span class="card-category special">スペシャル</span>
+            </div>
+            <div class="card-body">投げて着弾すると、<mark>少しずつ前進する大きなシートを発生させる</mark>装置。触れた敵は<mark>一定時間画面の色が見えづらくなり</mark>、ダメージも少し受ける。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">インク効率アップ (メイン)</div>
+                <span class="card-category gear-power">ギアパワー</span>
+            </div>
+            <div class="card-body"><mark>メインの消費インク量が少なくなる</mark>。付きやすいブランドはジモンとタタキケンサキ。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">インク効率アップ (サブ)</div>
+                <span class="card-category gear-power">ギアパワー</span>
+            </div>
+            <div class="card-body"><mark>サブの消費インク量が少なくなる</mark>。付きやすいブランドはホッコリーとアナアキ。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">インク回復力アップ</div>
+                <span class="card-category gear-power">ギアパワー</span>
+            </div>
+            <div class="card-body"><mark>インクの回復速度が上がる</mark>。付きやすいブランドはアロメ。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ヒト移動速度アップ</div>
+                <span class="card-category gear-power">ギアパワー</span>
+            </div>
+            <div class="card-body"><mark>ヒト状態の移動速度が上がる</mark>。付きやすいブランドはロッケンベルグ。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">イカダッシュ速度アップ</div>
+                <span class="card-category gear-power">ギアパワー</span>
+            </div>
+            <div class="card-body"><mark>イカダッシュ時の移動速度が上がる</mark>。付きやすいブランドはクラーゲス。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スペシャル増加量アップ</div>
+                <span class="card-category gear-power">ギアパワー</span>
+            </div>
+            <div class="card-body"><mark>スペシャルゲージの増加量が上がる</mark>。付きやすいブランドはヤコ。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スペシャル減少量ダウン</div>
+                <span class="card-category gear-power">ギアパワー</span>
+            </div>
+            <div class="card-body">自分がやられた時の<mark>スペシャルゲージの減少量が少なくなる</mark>。付きやすいブランドはエゾッコとエゾッコリー。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スペシャル性能アップ</div>
+                <span class="card-category gear-power">ギアパワー</span>
+            </div>
+            <div class="card-body"><mark>スペシャルの性能が上がる</mark>。付きやすいブランドはフォーリマ。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">復活時間短縮</div>
+                <span class="card-category gear-power">ギアパワー</span>
+            </div>
+            <div class="card-body"><mark>敵を一人も倒せないまま連続でやられた時の復活時間が短くなる</mark>。付きやすいブランドはホタックス。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スーパージャンプ時間短縮</div>
+                <span class="card-category gear-power">ギアパワー</span>
+            </div>
+            <div class="card-body"><mark>スーパージャンプにかかる時間が短くなる</mark>。付きやすいブランドはアイロニック。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">サブ性能アップ</div>
+                <span class="card-category gear-power">ギアパワー</span>
+            </div>
+            <div class="card-body"><mark>サブの性能が上がる</mark>。付きやすいブランドはエンペリー。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">相手インク影響軽減</div>
+                <span class="card-category gear-power">ギアパワー</span>
+            </div>
+            <div class="card-body"><mark>相手のインクを踏んだときのダメージや移動速度の減少量が少なくなる</mark>。付きやすいブランドはバトロイカ。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">サブ影響軽減</div>
+                <span class="card-category gear-power">ギアパワー</span>
+            </div>
+            <div class="card-body"><mark>敵のサブによるダメージや効果を軽減する</mark>。付きやすいブランドはシグレニ。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">アクション強化</div>
+                <span class="card-category gear-power">ギアパワー</span>
+            </div>
+            <div class="card-body"><mark>イカロールを行える角度が広くなり、イカノボリの貯めが早くなり、ジャンプ直後に攻撃するときの弾のブレが小さくなる</mark>。付きやすいブランドはバラズシとシチリン。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">スタートダッシュ</div>
+                <span class="card-category gear-power">ギアパワー</span>
+            </div>
+            <div class="card-body"><mark>対戦開始から30カウントの間、移動に関する効果がかなり上がる</mark>。アタマの基本ギアパワーにしか付けられない。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ラストスパート</div>
+                <span class="card-category gear-power">ギアパワー</span>
+            </div>
+            <div class="card-body"><mark>対戦終了の30カウント前からインク効率とインク回復速度がかなり上がる</mark>。アタマの基本ギアパワーにしか付けられない。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">逆境強化</div>
+                <span class="card-category gear-power">ギアパワー</span>
+            </div>
+            <div class="card-body">自分のチームの人数が敵のチームより少ない場合、<mark>少しずつスペシャルゲージが増える</mark>。アタマの基本ギアパワーにしか付けられない。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">カムバック</div>
+                <span class="card-category gear-power">ギアパワー</span>
+            </div>
+            <div class="card-body">やられて復活した後、<mark>しばらくの間一部の能力がかなり上がる</mark>。アタマの基本ギアパワーにしか付けられない。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">イカニンジャ</div>
+                <span class="card-category gear-power">ギアパワー</span>
+            </div>
+            <div class="card-body">地面をイカダッシュした時に<mark>インクが飛び散らなくなる</mark>。移動速度は少し遅くなる。フクの基本ギアパワーにしか付けられない。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">リベンジ</div>
+                <span class="card-category gear-power">ギアパワー</span>
+            </div>
+            <div class="card-body">復活したとき、<mark>自分を倒した敵の位置が遠くから見えるようになる</mark>。フクの基本ギアパワーにしか付けられない。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">サーマルインク</div>
+                <span class="card-category gear-power">ギアパワー</span>
+            </div>
+            <div class="card-body">メインを直接当てた相手が、<mark>しばらく遠くから見えるようになる</mark>。フクの基本ギアパワーにしか付けられない。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">復活ペナルティアップ</div>
+                <span class="card-category gear-power">ギアパワー</span>
+            </div>
+            <div class="card-body"><mark>自分と倒した敵のスペシャル減少量と復活時間が増える</mark>。フクの基本ギアパワーにしか付けられない。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">追加ギアパワー倍化</div>
+                <span class="card-category gear-power">ギアパワー</span>
+            </div>
+            <div class="card-body">
+                このギアについている<mark>追加ギアパワーを1個で2個分の効果にする</mark>。フクのフェスTの基本ギアパワーとして初めから付いており、別のギアパワーで上書きしてしまうと元には戻せない。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">ステルスジャンプ</div>
+                <span class="card-category gear-power">ギアパワー</span>
+            </div>
+            <div class="card-body"><mark>スーパージャンプの着地点のマーカーが離れた場所からは見えなくなる</mark>。クツの基本ギアパワーにしか付けられない。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">対物攻撃力アップ</div>
+                <span class="card-category gear-power">ギアパワー</span>
+            </div>
+            <div class="card-body"><mark>プレイヤー以外の物体に対して攻撃した時のダメージが増える</mark>。ただしシェルターの傘は含まない。クツの基本ギアパワーにしか付けられない。</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">受け身術</div>
+                <span class="card-category gear-power">ギアパワー</span>
+            </div>
+            <div class="card-body">スーパージャンプ着地時に<mark>前転できる</mark>。クツの基本ギアパワーにしか付けられない。</div>
+        </div>
+        <div id="control" class="none">
+            <div id="category-button">
+                <label><input id="weapon-set" type="checkbox" checked>ブキセット</label>
+                <label><input id="main" type="checkbox" checked>メイン</label>
+                <label><input id="sub" type="checkbox" checked>サブ</label>
+                <label><input id="special" type="checkbox" checked>スペシャル</label>
+                <label><input id="gear-power" type="checkbox" checked>ギアパワー</label>
+            </div>
+            <div id="change-button">
+                <button id="back">もどる</button>
+                <label id="reverse"><input type="checkbox">すべてうらがえす</label>
+                <label id="show"><input type="checkbox">めくる</label>
+                <button id="next">すすむ</button>
+            </div>
+        </div>
+    </main>
+    <script src="./main.js" defer></script>
+</body>
+
 </html>
